@@ -1,0 +1,5184 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "ner": {
+      "useDuckling": true
+    },
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "hello": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi,there": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "howdi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hiya": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi-ya": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "howdy-do": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "aloha": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "are,how,you": {
+            "intent": "user.asking",
+            "domain": "default"
+          },
+          "are,do,how,you": {
+            "intent": "user.asking",
+            "domain": "default"
+          },
+          "are,do,how,today,you": {
+            "intent": "user.asking",
+            "domain": "default"
+          },
+          "am,fine,i": {
+            "intent": "user.replying",
+            "domain": "default"
+          },
+          "am,good,i": {
+            "intent": "user.replying",
+            "domain": "default"
+          },
+          "am,do,good,i": {
+            "intent": "user.replying",
+            "domain": "default"
+          },
+          "am,do,great,i": {
+            "intent": "user.replying",
+            "domain": "default"
+          },
+          "am,do,i,well": {
+            "intent": "user.replying",
+            "domain": "default"
+          },
+          "alright,am,do,i": {
+            "intent": "user.replying",
+            "domain": "default"
+          },
+          "for,goodby,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,care,take": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later,okay,see,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,for,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "go,i,must": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "day,good": {
+            "intent": "greetings.goodDay",
+            "domain": "default"
+          },
+          "good,night": {
+            "intent": "greetings.goodNight",
+            "domain": "default"
+          },
+          "good,morn": {
+            "intent": "greetings.goodMorning",
+            "domain": "default"
+          },
+          "even,good": {
+            "intent": "greetings.goodevening",
+            "domain": "default"
+          },
+          "afternoon,good": {
+            "intent": "greetings.goodafternoon",
+            "domain": "default"
+          },
+          "is,liiftsoci,what": {
+            "intent": "about.liiftsocial",
+            "domain": "default"
+          },
+          "is,liftsoci,what": {
+            "intent": "about.liiftsocial",
+            "domain": "default"
+          },
+          "liiftsoci": {
+            "intent": "about.liiftsocial",
+            "domain": "default"
+          },
+          "liftsoci": {
+            "intent": "about.liiftsocial",
+            "domain": "default"
+          },
+          "about": {
+            "intent": "about.liiftsocial",
+            "domain": "default"
+          },
+          "about,can,liiftsoci,me,tell,what,you": {
+            "intent": "about.liiftsocial",
+            "domain": "default"
+          },
+          "about,can,liftsoci,me,tell,what,you": {
+            "intent": "about.liiftsocial",
+            "domain": "default"
+          },
+          "about,liiftsoci,me,tell": {
+            "intent": "about.liiftsocial",
+            "domain": "default"
+          },
+          "about,liftsoci,me,tell": {
+            "intent": "about.liiftsocial",
+            "domain": "default"
+          },
+          "for,is,this,websit,what": {
+            "intent": "about.liiftsocial",
+            "domain": "default"
+          },
+          "do,featur,offer,what,you": {
+            "intent": "features.liiftsocial",
+            "domain": "default"
+          },
+          "do,featur,provid,what,you": {
+            "intent": "features.liiftsocial",
+            "domain": "default"
+          },
+          "do,featur,have,what,you": {
+            "intent": "features.liiftsocial",
+            "domain": "default"
+          },
+          "avail,do,featur,have,what,you": {
+            "intent": "features.liiftsocial",
+            "domain": "default"
+          },
+          "featur": {
+            "intent": "features.liiftsocial",
+            "domain": "default"
+          },
+          "custom,do,how,i,my,post": {
+            "intent": "features.customizepost",
+            "domain": "default"
+          },
+          "custom,post": {
+            "intent": "features.customizepost",
+            "domain": "default"
+          },
+          "custom,my,post": {
+            "intent": "features.customizepost",
+            "domain": "default"
+          },
+          "custom": {
+            "intent": "features.customizepost",
+            "domain": "default"
+          },
+          "custompost": {
+            "intent": "features.customizepost",
+            "domain": "default"
+          },
+          "postcustom": {
+            "intent": "features.customizepost",
+            "domain": "default"
+          },
+          "bulk,do,excel,how,i,upload,via": {
+            "intent": "features.bulkuploadviaexcel",
+            "domain": "default"
+          },
+          "bulk,excel,upload,via": {
+            "intent": "features.bulkuploadviaexcel",
+            "domain": "default"
+          },
+          "bulk,excel,upload": {
+            "intent": "features.bulkuploadviaexcel",
+            "domain": "default"
+          },
+          "bulk,upload": {
+            "intent": "features.bulkuploadviaexcel",
+            "domain": "default"
+          },
+          "bulk,excel": {
+            "intent": "features.bulkuploadviaexcel",
+            "domain": "default"
+          },
+          "bulk": {
+            "intent": "features.bulkuploadviaexcel",
+            "domain": "default"
+          },
+          "excel,upload": {
+            "intent": "features.bulkuploadviaexcel",
+            "domain": "default"
+          },
+          "upload": {
+            "intent": "features.bulkuploadviaexcel",
+            "domain": "default"
+          },
+          "excel": {
+            "intent": "features.bulkuploadviaexcel",
+            "domain": "default"
+          },
+          "calendar,do,how,i,mode,use,view": {
+            "intent": "features.calendarviewmode",
+            "domain": "default"
+          },
+          "calendar,mode,view": {
+            "intent": "features.calendarviewmode",
+            "domain": "default"
+          },
+          "calendar,view": {
+            "intent": "features.calendarviewmode",
+            "domain": "default"
+          },
+          "calendar": {
+            "intent": "features.calendarviewmode",
+            "domain": "default"
+          },
+          "mode,view": {
+            "intent": "features.calendarviewmode",
+            "domain": "default"
+          },
+          "view": {
+            "intent": "features.calendarviewmode",
+            "domain": "default"
+          },
+          "mode": {
+            "intent": "features.calendarviewmode",
+            "domain": "default"
+          },
+          "do,how,i,quick,re-post,use": {
+            "intent": "features.quickrepost",
+            "domain": "default"
+          },
+          "quick,re-post": {
+            "intent": "features.quickrepost",
+            "domain": "default"
+          },
+          "quick,repost": {
+            "intent": "features.quickrepost",
+            "domain": "default"
+          },
+          "quick": {
+            "intent": "features.quickrepost",
+            "domain": "default"
+          },
+          "repost": {
+            "intent": "features.quickrepost",
+            "domain": "default"
+          },
+          "post,re": {
+            "intent": "features.quickrepost",
+            "domain": "default"
+          },
+          "re-post": {
+            "intent": "features.quickrepost",
+            "domain": "default"
+          },
+          "do,how,i,post,recur,use": {
+            "intent": "features.recurringposts",
+            "domain": "default"
+          },
+          "post,recur": {
+            "intent": "features.recurringposts",
+            "domain": "default"
+          },
+          "recur": {
+            "intent": "features.recurringposts",
+            "domain": "default"
+          },
+          "is,price,the,what": {
+            "intent": "pricing.liiftsocial",
+            "domain": "default"
+          },
+          "for,is,liiftsoci,price,the,what": {
+            "intent": "pricing.liiftsocial",
+            "domain": "default"
+          },
+          "for,is,liftsoci,price,the,what": {
+            "intent": "pricing.liiftsocial",
+            "domain": "default"
+          },
+          "price": {
+            "intent": "pricing.liiftsocial",
+            "domain": "default"
+          },
+          "is,plan,standard,the,what": {
+            "intent": "pricing.standardplan",
+            "domain": "default"
+          },
+          "for,is,liiftsoci,plan,standard,the,what": {
+            "intent": "pricing.standardplan",
+            "domain": "default"
+          },
+          "for,is,liftsoci,plan,standard,the,what": {
+            "intent": "pricing.standardplan",
+            "domain": "default"
+          },
+          "plan,standard": {
+            "intent": "pricing.standardplan",
+            "domain": "default"
+          },
+          "standard": {
+            "intent": "pricing.standardplan",
+            "domain": "default"
+          },
+          "is,plan,profession,the,what": {
+            "intent": "pricing.professionalplan",
+            "domain": "default"
+          },
+          "for,is,liiftsoci,plan,profession,the,what": {
+            "intent": "pricing.professionalplan",
+            "domain": "default"
+          },
+          "for,is,liftsoci,plan,profession,the,what": {
+            "intent": "pricing.professionalplan",
+            "domain": "default"
+          },
+          "plan,profession": {
+            "intent": "pricing.professionalplan",
+            "domain": "default"
+          },
+          "profession": {
+            "intent": "pricing.professionalplan",
+            "domain": "default"
+          },
+          "is,plan,pro-premium,the,what": {
+            "intent": "pricing.propremiumplan",
+            "domain": "default"
+          },
+          "for,is,liiftsoci,plan,pro-premium,the,what": {
+            "intent": "pricing.propremiumplan",
+            "domain": "default"
+          },
+          "for,is,liftsoci,plan,pro-premium,the,what": {
+            "intent": "pricing.propremiumplan",
+            "domain": "default"
+          },
+          "plan,pro-premium": {
+            "intent": "pricing.propremiumplan",
+            "domain": "default"
+          },
+          "pro-premium": {
+            "intent": "pricing.propremiumplan",
+            "domain": "default"
+          },
+          "plan,premium,pro": {
+            "intent": "pricing.propremiumplan",
+            "domain": "default"
+          },
+          "premium,pro": {
+            "intent": "pricing.propremiumplan",
+            "domain": "default"
+          },
+          "plan,premium": {
+            "intent": "pricing.propremiumplan",
+            "domain": "default"
+          },
+          "premium": {
+            "intent": "pricing.propremiumplan",
+            "domain": "default"
+          },
+          "center,help": {
+            "intent": "helpcenter.liiftsocial",
+            "domain": "default"
+          },
+          "help": {
+            "intent": "helpcenter.liiftsocial",
+            "domain": "default"
+          },
+          "center,facebook,for,help": {
+            "intent": "helpcenter.facebook",
+            "domain": "default"
+          },
+          "center,fb,for,help": {
+            "intent": "helpcenter.facebook",
+            "domain": "default"
+          },
+          "ad,center,facebook,for,help": {
+            "intent": "helpcenter.facebook",
+            "domain": "default"
+          },
+          "facebook": {
+            "intent": "helpcenter.facebook",
+            "domain": "default"
+          },
+          "fb": {
+            "intent": "helpcenter.facebook",
+            "domain": "default"
+          },
+          "center,for,help,instagram": {
+            "intent": "helpcenter.instagram",
+            "domain": "default"
+          },
+          "center,for,help,insta": {
+            "intent": "helpcenter.instagram",
+            "domain": "default"
+          },
+          "ad,center,for,help,instagram": {
+            "intent": "helpcenter.instagram",
+            "domain": "default"
+          },
+          "instagram": {
+            "intent": "helpcenter.instagram",
+            "domain": "default"
+          },
+          "insta": {
+            "intent": "helpcenter.instagram",
+            "domain": "default"
+          },
+          "center,for,help,linkedin": {
+            "intent": "helpcenter.linkedin",
+            "domain": "default"
+          },
+          "ad,center,for,help,linkedin": {
+            "intent": "helpcenter.linkedin",
+            "domain": "default"
+          },
+          "linkedin": {
+            "intent": "helpcenter.linkedin",
+            "domain": "default"
+          },
+          "center,for,help,twitter": {
+            "intent": "helpcenter.twitter",
+            "domain": "default"
+          },
+          "ad,center,for,help,twitter": {
+            "intent": "helpcenter.twitter",
+            "domain": "default"
+          },
+          "twitter": {
+            "intent": "helpcenter.twitter",
+            "domain": "default"
+          },
+          "contact,us": {
+            "intent": "contactus.liiftsocial",
+            "domain": "default"
+          },
+          "contact": {
+            "intent": "contactus.liiftsocial",
+            "domain": "default"
+          },
+          "contact,for,help,us": {
+            "intent": "contactus.liiftsocial",
+            "domain": "default"
+          },
+          "contact,for,support,us": {
+            "intent": "contactus.liiftsocial",
+            "domain": "default"
+          },
+          "assist,contact,for,us": {
+            "intent": "contactus.liiftsocial",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.hello": "default",
+          "user.asking": "default",
+          "user.replying": "default",
+          "greetings.bye": "default",
+          "greetings.goodDay": "default",
+          "greetings.goodNight": "default",
+          "greetings.goodMorning": "default",
+          "greetings.goodevening": "default",
+          "greetings.goodafternoon": "default",
+          "about.liiftsocial": "default",
+          "features.liiftsocial": "default",
+          "features.customizepost": "default",
+          "features.bulkuploadviaexcel": "default",
+          "features.calendarviewmode": "default",
+          "features.quickrepost": "default",
+          "features.recurringposts": "default",
+          "pricing.liiftsocial": "default",
+          "pricing.standardplan": "default",
+          "pricing.professionalplan": "default",
+          "pricing.propremiumplan": "default",
+          "helpcenter.liiftsocial": "default",
+          "helpcenter.facebook": "default",
+          "helpcenter.instagram": "default",
+          "helpcenter.linkedin": "default",
+          "helpcenter.twitter": "default",
+          "contactus.liiftsocial": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi there",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hiya",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi-ya",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy-do",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "aloha",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "How are you",
+            "intent": "user.asking"
+          },
+          {
+            "domain": "default",
+            "utterance": "How are you doing",
+            "intent": "user.asking"
+          },
+          {
+            "domain": "default",
+            "utterance": "How are you doing today",
+            "intent": "user.asking"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm fine",
+            "intent": "user.replying"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm good",
+            "intent": "user.replying"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm doing good",
+            "intent": "user.replying"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm doing great",
+            "intent": "user.replying"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm doing well",
+            "intent": "user.replying"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm doing alright",
+            "intent": "user.replying"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodbye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye bye take care",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "okay see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "i must go",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "good day",
+            "intent": "greetings.goodDay"
+          },
+          {
+            "domain": "default",
+            "utterance": "good night",
+            "intent": "greetings.goodNight"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greetings.goodMorning"
+          },
+          {
+            "domain": "default",
+            "utterance": "good evening",
+            "intent": "greetings.goodevening"
+          },
+          {
+            "domain": "default",
+            "utterance": "good afternoon",
+            "intent": "greetings.goodafternoon"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is liiftsocial",
+            "intent": "about.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is liftsocial?",
+            "intent": "about.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "liiftsocial",
+            "intent": "about.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "liftsocial",
+            "intent": "about.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "About",
+            "intent": "about.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "what can you tell me about liiftsocial.",
+            "intent": "about.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "what can you tell me about liftsocial.",
+            "intent": "about.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me about liiftsocial",
+            "intent": "about.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "tell me about liftsocial",
+            "intent": "about.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is this website for ?",
+            "intent": "about.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "what features do you offer",
+            "intent": "features.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "what features do you provide",
+            "intent": "features.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "what features do you have",
+            "intent": "features.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "what features do you have available",
+            "intent": "features.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "features",
+            "intent": "features.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "how do I customize my post",
+            "intent": "features.customizepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "customize post",
+            "intent": "features.customizepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "customize my post",
+            "intent": "features.customizepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "customize",
+            "intent": "features.customizepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "custompost",
+            "intent": "features.customizepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "custom",
+            "intent": "features.customizepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "postcustomize",
+            "intent": "features.customizepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "postcustom",
+            "intent": "features.customizepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "post customize",
+            "intent": "features.customizepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "post custom",
+            "intent": "features.customizepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "how do I bulk upload via excel",
+            "intent": "features.bulkuploadviaexcel"
+          },
+          {
+            "domain": "default",
+            "utterance": "bulk upload via excel",
+            "intent": "features.bulkuploadviaexcel"
+          },
+          {
+            "domain": "default",
+            "utterance": "bulk upload excel",
+            "intent": "features.bulkuploadviaexcel"
+          },
+          {
+            "domain": "default",
+            "utterance": "bulk upload",
+            "intent": "features.bulkuploadviaexcel"
+          },
+          {
+            "domain": "default",
+            "utterance": "bulk excel",
+            "intent": "features.bulkuploadviaexcel"
+          },
+          {
+            "domain": "default",
+            "utterance": "bulk",
+            "intent": "features.bulkuploadviaexcel"
+          },
+          {
+            "domain": "default",
+            "utterance": "upload excel",
+            "intent": "features.bulkuploadviaexcel"
+          },
+          {
+            "domain": "default",
+            "utterance": "upload",
+            "intent": "features.bulkuploadviaexcel"
+          },
+          {
+            "domain": "default",
+            "utterance": "excel upload",
+            "intent": "features.bulkuploadviaexcel"
+          },
+          {
+            "domain": "default",
+            "utterance": "excel",
+            "intent": "features.bulkuploadviaexcel"
+          },
+          {
+            "domain": "default",
+            "utterance": "how do I use calendar view mode",
+            "intent": "features.calendarviewmode"
+          },
+          {
+            "domain": "default",
+            "utterance": "calendar view mode",
+            "intent": "features.calendarviewmode"
+          },
+          {
+            "domain": "default",
+            "utterance": "calendar view",
+            "intent": "features.calendarviewmode"
+          },
+          {
+            "domain": "default",
+            "utterance": "calendar",
+            "intent": "features.calendarviewmode"
+          },
+          {
+            "domain": "default",
+            "utterance": "view mode",
+            "intent": "features.calendarviewmode"
+          },
+          {
+            "domain": "default",
+            "utterance": "view",
+            "intent": "features.calendarviewmode"
+          },
+          {
+            "domain": "default",
+            "utterance": "mode",
+            "intent": "features.calendarviewmode"
+          },
+          {
+            "domain": "default",
+            "utterance": "how do I use quick re-post",
+            "intent": "features.quickrepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "quick re-post",
+            "intent": "features.quickrepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "quick repost",
+            "intent": "features.quickrepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "quick",
+            "intent": "features.quickrepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "repost",
+            "intent": "features.quickrepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "re post",
+            "intent": "features.quickrepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "re-post",
+            "intent": "features.quickrepost"
+          },
+          {
+            "domain": "default",
+            "utterance": "how do I use recurring posts",
+            "intent": "features.recurringposts"
+          },
+          {
+            "domain": "default",
+            "utterance": "recurring posts",
+            "intent": "features.recurringposts"
+          },
+          {
+            "domain": "default",
+            "utterance": "recurring",
+            "intent": "features.recurringposts"
+          },
+          {
+            "domain": "default",
+            "utterance": "recurring post",
+            "intent": "features.recurringposts"
+          },
+          {
+            "domain": "default",
+            "utterance": "post recurring",
+            "intent": "features.recurringposts"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the pricing",
+            "intent": "pricing.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the pricing for liiftsocial",
+            "intent": "pricing.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the pricing for liftsocial",
+            "intent": "pricing.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "pricing",
+            "intent": "pricing.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the standard plan",
+            "intent": "pricing.standardplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the standard plan for liiftsocial",
+            "intent": "pricing.standardplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the standard plan for liftsocial",
+            "intent": "pricing.standardplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "standard plan",
+            "intent": "pricing.standardplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "standard",
+            "intent": "pricing.standardplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the professional plan",
+            "intent": "pricing.professionalplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the professional plan for liiftsocial",
+            "intent": "pricing.professionalplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the professional plan for liftsocial",
+            "intent": "pricing.professionalplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "professional plan",
+            "intent": "pricing.professionalplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "professional",
+            "intent": "pricing.professionalplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the pro-premium plan",
+            "intent": "pricing.propremiumplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the pro-premium plan for liiftsocial",
+            "intent": "pricing.propremiumplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the pro-premium plan for liftsocial",
+            "intent": "pricing.propremiumplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "pro-premium plan",
+            "intent": "pricing.propremiumplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "pro-premium",
+            "intent": "pricing.propremiumplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "pro premium plan",
+            "intent": "pricing.propremiumplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "pro premium",
+            "intent": "pricing.propremiumplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "premium plan",
+            "intent": "pricing.propremiumplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "premium",
+            "intent": "pricing.propremiumplan"
+          },
+          {
+            "domain": "default",
+            "utterance": "help center",
+            "intent": "helpcenter.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "help",
+            "intent": "helpcenter.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "help center for facebook",
+            "intent": "helpcenter.facebook"
+          },
+          {
+            "domain": "default",
+            "utterance": "help center for fb",
+            "intent": "helpcenter.facebook"
+          },
+          {
+            "domain": "default",
+            "utterance": "help center for facebook ads",
+            "intent": "helpcenter.facebook"
+          },
+          {
+            "domain": "default",
+            "utterance": "facebook",
+            "intent": "helpcenter.facebook"
+          },
+          {
+            "domain": "default",
+            "utterance": "fb",
+            "intent": "helpcenter.facebook"
+          },
+          {
+            "domain": "default",
+            "utterance": "help center for instagram",
+            "intent": "helpcenter.instagram"
+          },
+          {
+            "domain": "default",
+            "utterance": "help center for insta",
+            "intent": "helpcenter.instagram"
+          },
+          {
+            "domain": "default",
+            "utterance": "help center for instagram ads",
+            "intent": "helpcenter.instagram"
+          },
+          {
+            "domain": "default",
+            "utterance": "instagram",
+            "intent": "helpcenter.instagram"
+          },
+          {
+            "domain": "default",
+            "utterance": "insta",
+            "intent": "helpcenter.instagram"
+          },
+          {
+            "domain": "default",
+            "utterance": "help center for linkedin",
+            "intent": "helpcenter.linkedin"
+          },
+          {
+            "domain": "default",
+            "utterance": "help center for linkedin ads",
+            "intent": "helpcenter.linkedin"
+          },
+          {
+            "domain": "default",
+            "utterance": "linkedin",
+            "intent": "helpcenter.linkedin"
+          },
+          {
+            "domain": "default",
+            "utterance": "help center for twitter",
+            "intent": "helpcenter.twitter"
+          },
+          {
+            "domain": "default",
+            "utterance": "help center for twitter ads",
+            "intent": "helpcenter.twitter"
+          },
+          {
+            "domain": "default",
+            "utterance": "twitter",
+            "intent": "helpcenter.twitter"
+          },
+          {
+            "domain": "default",
+            "utterance": "contact us",
+            "intent": "contactus.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "contact",
+            "intent": "contactus.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "contact us for help",
+            "intent": "contactus.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "contact us for support",
+            "intent": "contactus.liiftsocial"
+          },
+          {
+            "domain": "default",
+            "utterance": "contact us for assistance",
+            "intent": "contactus.liiftsocial"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "hello": 1,
+              "hi": 1,
+              "there": 1,
+              "howdi": 1,
+              "hiya": 1,
+              "hi-ya": 1,
+              "howdy-do": 1,
+              "aloha": 1,
+              "hey": 1,
+              "how": 1,
+              "are": 1,
+              "you": 1,
+              "do": 1,
+              "today": 1,
+              "i": 1,
+              "am": 1,
+              "fine": 1,
+              "good": 1,
+              "great": 1,
+              "well": 1,
+              "alright": 1,
+              "goodby": 1,
+              "for": 1,
+              "now": 1,
+              "bye": 1,
+              "take": 1,
+              "care": 1,
+              "okay": 1,
+              "see": 1,
+              "later": 1,
+              "must": 1,
+              "go": 1,
+              "day": 1,
+              "night": 1,
+              "morn": 1,
+              "even": 1,
+              "afternoon": 1,
+              "what": 1,
+              "is": 1,
+              "liiftsoci": 1,
+              "liftsoci": 1,
+              "about": 1,
+              "can": 1,
+              "tell": 1,
+              "me": 1,
+              "this": 1,
+              "websit": 1,
+              "featur": 1,
+              "offer": 1,
+              "provid": 1,
+              "have": 1,
+              "avail": 1,
+              "custom": 1,
+              "my": 1,
+              "post": 1,
+              "custompost": 1,
+              "postcustom": 1,
+              "bulk": 1,
+              "upload": 1,
+              "via": 1,
+              "excel": 1,
+              "use": 1,
+              "calendar": 1,
+              "view": 1,
+              "mode": 1,
+              "quick": 1,
+              "re-post": 1,
+              "repost": 1,
+              "re": 1,
+              "recur": 1,
+              "the": 1,
+              "price": 1,
+              "standard": 1,
+              "plan": 1,
+              "profession": 1,
+              "pro-premium": 1,
+              "pro": 1,
+              "premium": 1,
+              "help": 1,
+              "center": 1,
+              "facebook": 1,
+              "fb": 1,
+              "ad": 1,
+              "instagram": 1,
+              "insta": 1,
+              "linkedin": 1,
+              "twitter": 1,
+              "contact": 1,
+              "us": 1,
+              "support": 1,
+              "assist": 1
+            },
+            "intents": {
+              "greetings.hello": 1,
+              "user.asking": 1,
+              "user.replying": 1,
+              "greetings.bye": 1,
+              "greetings.goodDay": 1,
+              "greetings.goodNight": 1,
+              "greetings.goodMorning": 1,
+              "greetings.goodevening": 1,
+              "greetings.goodafternoon": 1,
+              "about.liiftsocial": 1,
+              "features.liiftsocial": 1,
+              "features.customizepost": 1,
+              "features.bulkuploadviaexcel": 1,
+              "features.calendarviewmode": 1,
+              "features.quickrepost": 1,
+              "features.recurringposts": 1,
+              "pricing.liiftsocial": 1,
+              "pricing.standardplan": 1,
+              "pricing.professionalplan": 1,
+              "pricing.propremiumplan": 1,
+              "helpcenter.liiftsocial": 1,
+              "helpcenter.facebook": 1,
+              "helpcenter.instagram": 1,
+              "helpcenter.linkedin": 1,
+              "helpcenter.twitter": 1,
+              "contactus.liiftsocial": 1
+            },
+            "intentFeatures": {
+              "greetings.hello": {
+                "hello": 1,
+                "hi": 1,
+                "there": 1,
+                "howdi": 1,
+                "hiya": 1,
+                "hi-ya": 1,
+                "howdy-do": 1,
+                "aloha": 1,
+                "hey": 1
+              },
+              "user.asking": {
+                "how": 1,
+                "are": 1,
+                "you": 1,
+                "do": 1,
+                "today": 1
+              },
+              "user.replying": {
+                "i": 1,
+                "am": 1,
+                "fine": 1,
+                "good": 1,
+                "do": 1,
+                "great": 1,
+                "well": 1,
+                "alright": 1
+              },
+              "greetings.bye": {
+                "goodby": 1,
+                "for": 1,
+                "now": 1,
+                "bye": 1,
+                "take": 1,
+                "care": 1,
+                "okay": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "i": 1,
+                "must": 1,
+                "go": 1
+              },
+              "greetings.goodDay": {
+                "good": 1,
+                "day": 1
+              },
+              "greetings.goodNight": {
+                "good": 1,
+                "night": 1
+              },
+              "greetings.goodMorning": {
+                "good": 1,
+                "morn": 1
+              },
+              "greetings.goodevening": {
+                "good": 1,
+                "even": 1
+              },
+              "greetings.goodafternoon": {
+                "good": 1,
+                "afternoon": 1
+              },
+              "about.liiftsocial": {
+                "what": 1,
+                "is": 1,
+                "liiftsoci": 1,
+                "liftsoci": 1,
+                "about": 1,
+                "can": 1,
+                "you": 1,
+                "tell": 1,
+                "me": 1,
+                "this": 1,
+                "websit": 1,
+                "for": 1
+              },
+              "features.liiftsocial": {
+                "what": 1,
+                "featur": 1,
+                "do": 1,
+                "you": 1,
+                "offer": 1,
+                "provid": 1,
+                "have": 1,
+                "avail": 1
+              },
+              "features.customizepost": {
+                "how": 1,
+                "do": 1,
+                "i": 1,
+                "custom": 1,
+                "my": 1,
+                "post": 1,
+                "custompost": 1,
+                "postcustom": 1
+              },
+              "features.bulkuploadviaexcel": {
+                "how": 1,
+                "do": 1,
+                "i": 1,
+                "bulk": 1,
+                "upload": 1,
+                "via": 1,
+                "excel": 1
+              },
+              "features.calendarviewmode": {
+                "how": 1,
+                "do": 1,
+                "i": 1,
+                "use": 1,
+                "calendar": 1,
+                "view": 1,
+                "mode": 1
+              },
+              "features.quickrepost": {
+                "how": 1,
+                "do": 1,
+                "i": 1,
+                "use": 1,
+                "quick": 1,
+                "re-post": 1,
+                "repost": 1,
+                "re": 1,
+                "post": 1
+              },
+              "features.recurringposts": {
+                "how": 1,
+                "do": 1,
+                "i": 1,
+                "use": 1,
+                "recur": 1,
+                "post": 1
+              },
+              "pricing.liiftsocial": {
+                "what": 1,
+                "is": 1,
+                "the": 1,
+                "price": 1,
+                "for": 1,
+                "liiftsoci": 1,
+                "liftsoci": 1
+              },
+              "pricing.standardplan": {
+                "what": 1,
+                "is": 1,
+                "the": 1,
+                "standard": 1,
+                "plan": 1,
+                "for": 1,
+                "liiftsoci": 1,
+                "liftsoci": 1
+              },
+              "pricing.professionalplan": {
+                "what": 1,
+                "is": 1,
+                "the": 1,
+                "profession": 1,
+                "plan": 1,
+                "for": 1,
+                "liiftsoci": 1,
+                "liftsoci": 1
+              },
+              "pricing.propremiumplan": {
+                "what": 1,
+                "is": 1,
+                "the": 1,
+                "pro-premium": 1,
+                "plan": 1,
+                "for": 1,
+                "liiftsoci": 1,
+                "liftsoci": 1,
+                "pro": 1,
+                "premium": 1
+              },
+              "helpcenter.liiftsocial": {
+                "help": 1,
+                "center": 1
+              },
+              "helpcenter.facebook": {
+                "help": 1,
+                "center": 1,
+                "for": 1,
+                "facebook": 1,
+                "fb": 1,
+                "ad": 1
+              },
+              "helpcenter.instagram": {
+                "help": 1,
+                "center": 1,
+                "for": 1,
+                "instagram": 1,
+                "insta": 1,
+                "ad": 1
+              },
+              "helpcenter.linkedin": {
+                "help": 1,
+                "center": 1,
+                "for": 1,
+                "linkedin": 1,
+                "ad": 1
+              },
+              "helpcenter.twitter": {
+                "help": 1,
+                "center": 1,
+                "for": 1,
+                "twitter": 1,
+                "ad": 1
+              },
+              "contactus.liiftsocial": {
+                "contact": 1,
+                "us": 1,
+                "for": 1,
+                "help": 1,
+                "support": 1,
+                "assist": 1
+              }
+            },
+            "featuresToIntent": {
+              "hello": [
+                "greetings.hello"
+              ],
+              "hi": [
+                "greetings.hello"
+              ],
+              "there": [
+                "greetings.hello"
+              ],
+              "howdi": [
+                "greetings.hello"
+              ],
+              "hiya": [
+                "greetings.hello"
+              ],
+              "hi-ya": [
+                "greetings.hello"
+              ],
+              "howdy-do": [
+                "greetings.hello"
+              ],
+              "aloha": [
+                "greetings.hello"
+              ],
+              "hey": [
+                "greetings.hello"
+              ],
+              "how": [
+                "user.asking",
+                "features.customizepost",
+                "features.bulkuploadviaexcel",
+                "features.calendarviewmode",
+                "features.quickrepost",
+                "features.recurringposts"
+              ],
+              "are": [
+                "user.asking"
+              ],
+              "you": [
+                "user.asking",
+                "greetings.bye",
+                "about.liiftsocial",
+                "features.liiftsocial"
+              ],
+              "do": [
+                "user.asking",
+                "user.replying",
+                "features.liiftsocial",
+                "features.customizepost",
+                "features.bulkuploadviaexcel",
+                "features.calendarviewmode",
+                "features.quickrepost",
+                "features.recurringposts"
+              ],
+              "today": [
+                "user.asking"
+              ],
+              "i": [
+                "user.replying",
+                "greetings.bye",
+                "features.customizepost",
+                "features.bulkuploadviaexcel",
+                "features.calendarviewmode",
+                "features.quickrepost",
+                "features.recurringposts"
+              ],
+              "am": [
+                "user.replying"
+              ],
+              "fine": [
+                "user.replying"
+              ],
+              "good": [
+                "user.replying",
+                "greetings.goodDay",
+                "greetings.goodNight",
+                "greetings.goodMorning",
+                "greetings.goodevening",
+                "greetings.goodafternoon"
+              ],
+              "great": [
+                "user.replying"
+              ],
+              "well": [
+                "user.replying"
+              ],
+              "alright": [
+                "user.replying"
+              ],
+              "goodby": [
+                "greetings.bye"
+              ],
+              "for": [
+                "greetings.bye",
+                "about.liiftsocial",
+                "pricing.liiftsocial",
+                "pricing.standardplan",
+                "pricing.professionalplan",
+                "pricing.propremiumplan",
+                "helpcenter.facebook",
+                "helpcenter.instagram",
+                "helpcenter.linkedin",
+                "helpcenter.twitter",
+                "contactus.liiftsocial"
+              ],
+              "now": [
+                "greetings.bye"
+              ],
+              "bye": [
+                "greetings.bye"
+              ],
+              "take": [
+                "greetings.bye"
+              ],
+              "care": [
+                "greetings.bye"
+              ],
+              "okay": [
+                "greetings.bye"
+              ],
+              "see": [
+                "greetings.bye"
+              ],
+              "later": [
+                "greetings.bye"
+              ],
+              "must": [
+                "greetings.bye"
+              ],
+              "go": [
+                "greetings.bye"
+              ],
+              "day": [
+                "greetings.goodDay"
+              ],
+              "night": [
+                "greetings.goodNight"
+              ],
+              "morn": [
+                "greetings.goodMorning"
+              ],
+              "even": [
+                "greetings.goodevening"
+              ],
+              "afternoon": [
+                "greetings.goodafternoon"
+              ],
+              "what": [
+                "about.liiftsocial",
+                "features.liiftsocial",
+                "pricing.liiftsocial",
+                "pricing.standardplan",
+                "pricing.professionalplan",
+                "pricing.propremiumplan"
+              ],
+              "is": [
+                "about.liiftsocial",
+                "pricing.liiftsocial",
+                "pricing.standardplan",
+                "pricing.professionalplan",
+                "pricing.propremiumplan"
+              ],
+              "liiftsoci": [
+                "about.liiftsocial",
+                "pricing.liiftsocial",
+                "pricing.standardplan",
+                "pricing.professionalplan",
+                "pricing.propremiumplan"
+              ],
+              "liftsoci": [
+                "about.liiftsocial",
+                "pricing.liiftsocial",
+                "pricing.standardplan",
+                "pricing.professionalplan",
+                "pricing.propremiumplan"
+              ],
+              "about": [
+                "about.liiftsocial"
+              ],
+              "can": [
+                "about.liiftsocial"
+              ],
+              "tell": [
+                "about.liiftsocial"
+              ],
+              "me": [
+                "about.liiftsocial"
+              ],
+              "this": [
+                "about.liiftsocial"
+              ],
+              "websit": [
+                "about.liiftsocial"
+              ],
+              "featur": [
+                "features.liiftsocial"
+              ],
+              "offer": [
+                "features.liiftsocial"
+              ],
+              "provid": [
+                "features.liiftsocial"
+              ],
+              "have": [
+                "features.liiftsocial"
+              ],
+              "avail": [
+                "features.liiftsocial"
+              ],
+              "custom": [
+                "features.customizepost"
+              ],
+              "my": [
+                "features.customizepost"
+              ],
+              "post": [
+                "features.customizepost",
+                "features.quickrepost",
+                "features.recurringposts"
+              ],
+              "custompost": [
+                "features.customizepost"
+              ],
+              "postcustom": [
+                "features.customizepost"
+              ],
+              "bulk": [
+                "features.bulkuploadviaexcel"
+              ],
+              "upload": [
+                "features.bulkuploadviaexcel"
+              ],
+              "via": [
+                "features.bulkuploadviaexcel"
+              ],
+              "excel": [
+                "features.bulkuploadviaexcel"
+              ],
+              "use": [
+                "features.calendarviewmode",
+                "features.quickrepost",
+                "features.recurringposts"
+              ],
+              "calendar": [
+                "features.calendarviewmode"
+              ],
+              "view": [
+                "features.calendarviewmode"
+              ],
+              "mode": [
+                "features.calendarviewmode"
+              ],
+              "quick": [
+                "features.quickrepost"
+              ],
+              "re-post": [
+                "features.quickrepost"
+              ],
+              "repost": [
+                "features.quickrepost"
+              ],
+              "re": [
+                "features.quickrepost"
+              ],
+              "recur": [
+                "features.recurringposts"
+              ],
+              "the": [
+                "pricing.liiftsocial",
+                "pricing.standardplan",
+                "pricing.professionalplan",
+                "pricing.propremiumplan"
+              ],
+              "price": [
+                "pricing.liiftsocial"
+              ],
+              "standard": [
+                "pricing.standardplan"
+              ],
+              "plan": [
+                "pricing.standardplan",
+                "pricing.professionalplan",
+                "pricing.propremiumplan"
+              ],
+              "profession": [
+                "pricing.professionalplan"
+              ],
+              "pro-premium": [
+                "pricing.propremiumplan"
+              ],
+              "pro": [
+                "pricing.propremiumplan"
+              ],
+              "premium": [
+                "pricing.propremiumplan"
+              ],
+              "help": [
+                "helpcenter.liiftsocial",
+                "helpcenter.facebook",
+                "helpcenter.instagram",
+                "helpcenter.linkedin",
+                "helpcenter.twitter",
+                "contactus.liiftsocial"
+              ],
+              "center": [
+                "helpcenter.liiftsocial",
+                "helpcenter.facebook",
+                "helpcenter.instagram",
+                "helpcenter.linkedin",
+                "helpcenter.twitter"
+              ],
+              "facebook": [
+                "helpcenter.facebook"
+              ],
+              "fb": [
+                "helpcenter.facebook"
+              ],
+              "ad": [
+                "helpcenter.facebook",
+                "helpcenter.instagram",
+                "helpcenter.linkedin",
+                "helpcenter.twitter"
+              ],
+              "instagram": [
+                "helpcenter.instagram"
+              ],
+              "insta": [
+                "helpcenter.instagram"
+              ],
+              "linkedin": [
+                "helpcenter.linkedin"
+              ],
+              "twitter": [
+                "helpcenter.twitter"
+              ],
+              "contact": [
+                "contactus.liiftsocial"
+              ],
+              "us": [
+                "contactus.liiftsocial"
+              ],
+              "support": [
+                "contactus.liiftsocial"
+              ],
+              "assist": [
+                "contactus.liiftsocial"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "hello",
+                "hi",
+                "there",
+                "howdi",
+                "hiya",
+                "hi-ya",
+                "howdy-do",
+                "aloha",
+                "hey",
+                "how",
+                "are",
+                "you",
+                "do",
+                "today",
+                "i",
+                "am",
+                "fine",
+                "good",
+                "great",
+                "well",
+                "alright",
+                "goodby",
+                "for",
+                "now",
+                "bye",
+                "take",
+                "care",
+                "okay",
+                "see",
+                "later",
+                "must",
+                "go",
+                "day",
+                "night",
+                "morn",
+                "even",
+                "afternoon",
+                "what",
+                "is",
+                "liiftsoci",
+                "liftsoci",
+                "about",
+                "can",
+                "tell",
+                "me",
+                "this",
+                "websit",
+                "featur",
+                "offer",
+                "provid",
+                "have",
+                "avail",
+                "custom",
+                "my",
+                "post",
+                "custompost",
+                "postcustom",
+                "bulk",
+                "upload",
+                "via",
+                "excel",
+                "use",
+                "calendar",
+                "view",
+                "mode",
+                "quick",
+                "re-post",
+                "repost",
+                "re",
+                "recur",
+                "the",
+                "price",
+                "standard",
+                "plan",
+                "profession",
+                "pro-premium",
+                "pro",
+                "premium",
+                "help",
+                "center",
+                "facebook",
+                "fb",
+                "ad",
+                "instagram",
+                "insta",
+                "linkedin",
+                "twitter",
+                "contact",
+                "us",
+                "support",
+                "assist"
+              ],
+              "intents": [
+                "greetings.hello",
+                "user.asking",
+                "user.replying",
+                "greetings.bye",
+                "greetings.goodDay",
+                "greetings.goodNight",
+                "greetings.goodMorning",
+                "greetings.goodevening",
+                "greetings.goodafternoon",
+                "about.liiftsocial",
+                "features.liiftsocial",
+                "features.customizepost",
+                "features.bulkuploadviaexcel",
+                "features.calendarviewmode",
+                "features.quickrepost",
+                "features.recurringposts",
+                "pricing.liiftsocial",
+                "pricing.standardplan",
+                "pricing.professionalplan",
+                "pricing.propremiumplan",
+                "helpcenter.liiftsocial",
+                "helpcenter.facebook",
+                "helpcenter.instagram",
+                "helpcenter.linkedin",
+                "helpcenter.twitter",
+                "contactus.liiftsocial"
+              ],
+              "perceptrons": [
+                [
+                  11.773395538330078,
+                  5.886695861816406,
+                  5.886695861816406,
+                  11.773394584655762,
+                  11.773395538330078,
+                  11.773386001586914,
+                  11.773385047912598,
+                  11.773385047912598,
+                  11.773385047912598,
+                  -1.1573110818862915,
+                  -1.1573110818862915,
+                  -1.9225407838821411,
+                  -1.1259795427322388,
+                  -0.16195188462734222,
+                  -2.2633023262023926,
+                  -1.4942132234573364,
+                  -0.5319699645042419,
+                  -3.257554292678833,
+                  -0.1321457177400589,
+                  -0.08713067322969437,
+                  -0.053043145686388016,
+                  -0.9053417444229126,
+                  -1.5184531211853027,
+                  -1.4050275087356567,
+                  -1.5589760541915894,
+                  -1.0568184852600098,
+                  -1.0568184852600098,
+                  -0.6522660255432129,
+                  -0.6522660255432129,
+                  -0.6522660255432129,
+                  -0.7190720438957214,
+                  -0.7190720438957214,
+                  -0.622307538986206,
+                  -0.5599513053894043,
+                  -0.5203967094421387,
+                  -0.46664974093437195,
+                  -0.4176329970359802,
+                  -1.1653943061828613,
+                  -1.1117374897003174,
+                  -2.781590223312378,
+                  -2.7328689098358154,
+                  -2.686511754989624,
+                  -0.03696679323911667,
+                  -0.454821914434433,
+                  -0.454821914434433,
+                  -0.07398011535406113,
+                  -0.07398011535406113,
+                  -2.619624137878418,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -2.91579532623291,
+                  -0.27250730991363525,
+                  -1.9170061349868774,
+                  -2.59322190284729,
+                  -2.8004724979400635,
+                  -2.6208407878875732,
+                  -2.6087327003479004,
+                  -0.15565598011016846,
+                  -2.5937867164611816,
+                  0,
+                  -2.568240165710449,
+                  -2.5742483139038086,
+                  -2.549421787261963,
+                  -2.5536909103393555,
+                  -2.528102397918701,
+                  -2.5334110260009766,
+                  -0.7122291326522827,
+                  -2.5206704139709473,
+                  0,
+                  -2.516639232635498,
+                  -2.5160717964172363,
+                  -1.289360761642456,
+                  -2.5143957138061523,
+                  -2.513359785079956,
+                  -0.7097681164741516,
+                  -2.5132713317871094,
+                  -2.512796401977539,
+                  -0.7023409008979797,
+                  -2.512397527694702,
+                  -2.5123422145843506,
+                  0,
+                  -2.512328624725342,
+                  -2.5123250484466553,
+                  -2.5123236179351807,
+                  -2.5123226642608643,
+                  -2.512322425842285,
+                  -0.6189922094345093,
+                  0,
+                  0,
+                  2.51232380857947
+                ],
+                [
+                  -0.005009216256439686,
+                  -0.0025167614221572876,
+                  -0.0025167614221572876,
+                  -0.0046965195797383785,
+                  -0.0046687498688697815,
+                  -0.004633334465324879,
+                  -0.004597166087478399,
+                  -0.004569961689412594,
+                  -0.004535224288702011,
+                  4.439432621002197,
+                  6.383910179138184,
+                  3.4703125953674316,
+                  -0.0011805188842117786,
+                  0.0009781660046428442,
+                  -2.7356655597686768,
+                  -0.659368097782135,
+                  -0.04614393040537834,
+                  -0.3900660574436188,
+                  -0.08860740810632706,
+                  -0.07482890784740448,
+                  -0.05723986029624939,
+                  -0.06365559995174408,
+                  -0.1257695108652115,
+                  -0.1257695108652115,
+                  -0.12467586994171143,
+                  -0.06261658668518066,
+                  -0.06261658668518066,
+                  -1.1582043170928955,
+                  -1.1582043170928955,
+                  -1.1582043170928955,
+                  0,
+                  0,
+                  -0.028394917026162148,
+                  -0.022336699068546295,
+                  -0.01805945299565792,
+                  -0.014898734167218208,
+                  -0.012467453256249428,
+                  -1.8259738683700562,
+                  -0.04831079766154289,
+                  -0.2812424898147583,
+                  -0.22303195297718048,
+                  -0.42015576362609863,
+                  -0.358577698469162,
+                  -0.358577698469162,
+                  -0.358577698469162,
+                  0,
+                  0,
+                  -1.3198260068893433,
+                  -0.45739129185676575,
+                  -0.36745014786720276,
+                  -0.38584285974502563,
+                  -0.10505631566047668,
+                  -0.5327926874160767,
+                  -0.5327926874160767,
+                  -0.6819890141487122,
+                  -0.005286443047225475,
+                  -0.005780131556093693,
+                  -0.45197099447250366,
+                  -0.45197099447250366,
+                  -0.45197099447250366,
+                  -0.45197099447250366,
+                  -0.8909000158309937,
+                  -0.31032276153564453,
+                  -0.31032276153564453,
+                  -0.31032276153564453,
+                  -0.40210214257240295,
+                  -0.40210214257240295,
+                  -0.005177601240575314,
+                  0,
+                  -0.1222040206193924,
+                  0,
+                  -0.005138576962053776,
+                  -0.005169460084289312,
+                  -0.003438759595155716,
+                  -0.005127232056111097,
+                  -0.005086086690425873,
+                  -0.0017260160529986024,
+                  -0.005131799262017012,
+                  -0.005096297711133957,
+                  -0.0016896427841857076,
+                  -0.004957294557243586,
+                  -0.004927066620439291,
+                  0,
+                  -0.004890745971351862,
+                  -0.004861624911427498,
+                  -0.004826452117413282,
+                  -0.004790382459759712,
+                  -0.004833871033042669,
+                  -0.0014458313817158341,
+                  0,
+                  0,
+                  -0.0074679028701461255
+                ],
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -2.7949371337890625,
+                  0,
+                  -0.7319956421852112,
+                  0.009204190224409103,
+                  0,
+                  4.404244899749756,
+                  9.187000274658203,
+                  1.1482819318771362,
+                  1.1419225931167603,
+                  1.1365965604782104,
+                  1.1366610527038574,
+                  1.1365503072738647,
+                  -0.13796016573905945,
+                  -0.2974030673503876,
+                  -0.25593826174736023,
+                  -0.25692418217658997,
+                  -0.1398410201072693,
+                  -0.1398410201072693,
+                  -0.07830721139907837,
+                  -0.07830721139907837,
+                  -0.07830721139907837,
+                  -1.9759591817855835,
+                  -1.9759591817855835,
+                  -0.699176013469696,
+                  -0.6981244087219238,
+                  -0.6972480416297913,
+                  -0.6965044140815735,
+                  -0.695966362953186,
+                  -0.7403665781021118,
+                  -0.12787136435508728,
+                  -0.17728516459465027,
+                  -0.16593019664287567,
+                  -0.17145365476608276,
+                  -0.03887259587645531,
+                  -0.09296271204948425,
+                  -0.09296271204948425,
+                  -0.009794732555747032,
+                  -0.009794732555747032,
+                  -0.5191177725791931,
+                  -0.10862122476100922,
+                  -0.09517720341682434,
+                  -0.1488928645849228,
+                  -0.04274280369281769,
+                  -0.7134509682655334,
+                  -0.7134509682655334,
+                  -0.969146192073822,
+                  -0.007099146954715252,
+                  -0.01515033096075058,
+                  -0.5981143116950989,
+                  -0.5981143116950989,
+                  -0.5981143116950989,
+                  -0.5981143116950989,
+                  -1.1529450416564941,
+                  -0.4927181601524353,
+                  -0.4927181601524353,
+                  -0.4927181601524353,
+                  -0.4614626467227936,
+                  -0.4614626467227936,
+                  0,
+                  0,
+                  -0.1107681393623352,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.45202914489395624
+                ],
+                [
+                  -0.24276289343833923,
+                  -0.1259486973285675,
+                  -0.1259486973285675,
+                  -0.19953195750713348,
+                  -0.19953195750713348,
+                  -0.19953195750713348,
+                  -0.1995319426059723,
+                  -0.1995319426059723,
+                  -0.1995319426059723,
+                  -1.5092531442642212,
+                  -0.9313508868217468,
+                  2.241072416305542,
+                  -1.4716051816940308,
+                  -0.0013401600299403071,
+                  3.03887939453125,
+                  -1.9068777561187744,
+                  -1.3315328359603882,
+                  -1.5275812149047852,
+                  -0.1508655846118927,
+                  -0.11628670245409012,
+                  -0.087589792907238,
+                  5.236165523529053,
+                  2.802687168121338,
+                  6.047326564788818,
+                  5.236172199249268,
+                  4.425003528594971,
+                  4.425003528594971,
+                  3.9483695030212402,
+                  3.9483695030212402,
+                  3.9483695030212402,
+                  5.523652076721191,
+                  5.523652076721191,
+                  -0.2680623531341553,
+                  -0.24108929932117462,
+                  -0.21379199624061584,
+                  -0.18796387314796448,
+                  -0.16437651216983795,
+                  -1.640636682510376,
+                  -0.8646209836006165,
+                  -0.7641902565956116,
+                  -0.7245391011238098,
+                  -0.6922575831413269,
+                  -0.23766879737377167,
+                  -0.3241115212440491,
+                  -0.3241115212440491,
+                  -0.4417437016963959,
+                  -0.4417437016963959,
+                  -0.7484533190727234,
+                  -0.1349000781774521,
+                  -0.10361026972532272,
+                  -0.1276640146970749,
+                  -0.03408228978514671,
+                  -0.858756959438324,
+                  -0.22406648099422455,
+                  -0.6185615658760071,
+                  -0.41794949769973755,
+                  -0.623015284538269,
+                  -0.6203605532646179,
+                  -0.6268897652626038,
+                  -0.1669805645942688,
+                  -0.6178950071334839,
+                  -0.254542738199234,
+                  -0.5165491104125977,
+                  -0.5674417614936829,
+                  -0.4873256981372833,
+                  -0.5429605841636658,
+                  -0.4429539144039154,
+                  -0.3801775872707367,
+                  -0.06438758224248886,
+                  -0.3265780508518219,
+                  -0.05702110007405281,
+                  -0.3160538375377655,
+                  -0.3421582579612732,
+                  -0.40003272891044617,
+                  -0.3219223618507385,
+                  -0.30216124653816223,
+                  -0.16539858281612396,
+                  -0.3609917163848877,
+                  -1.5972872972488403,
+                  -1.4120208024978638,
+                  -0.5126050710678101,
+                  -0.40164995193481445,
+                  -0.1864713728427887,
+                  -0.339620977640152,
+                  -0.3024695813655853,
+                  -0.261907696723938,
+                  -0.2367764115333557,
+                  -1.3194358348846436,
+                  -1.307287335395813,
+                  -0.6082808375358582,
+                  -0.5114052891731262,
+                  0.199532061048762
+                ],
+                [
+                  -0.04774199426174164,
+                  -0.023881930857896805,
+                  -0.023881930857896805,
+                  -0.047661904245615005,
+                  -0.04766180366277695,
+                  -0.047661736607551575,
+                  -0.047661688178777695,
+                  -0.04766164347529411,
+                  -0.047661587595939636,
+                  -0.02357669547200203,
+                  0,
+                  -0.053996965289115906,
+                  -0.30955109000205994,
+                  0,
+                  -1.118200659751892,
+                  -1.089165449142456,
+                  0,
+                  2.15970778465271,
+                  0,
+                  0,
+                  0,
+                  -0.007793772965669632,
+                  -0.03207419067621231,
+                  -0.007793772965669632,
+                  -0.015887245535850525,
+                  -0.015887245535850525,
+                  -0.015887245535850525,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  12.078343391418457,
+                  -2.2073657512664795,
+                  -2.2073662281036377,
+                  -2.2073657512664795,
+                  -2.2073655128479004,
+                  -0.12666670978069305,
+                  -0.056166257709264755,
+                  -0.10226058959960938,
+                  -0.09022072702646255,
+                  -0.09145087748765945,
+                  -0.01841338910162449,
+                  -0.04032353684306145,
+                  -0.04032353684306145,
+                  -0.0073839835822582245,
+                  -0.0073839835822582245,
+                  -0.07567004859447479,
+                  -0.007012783084064722,
+                  -0.004964339081197977,
+                  -0.00591678824275732,
+                  -0.0014108405448496342,
+                  -0.11280941963195801,
+                  -0.027074597775936127,
+                  -0.0809902548789978,
+                  -0.05714615806937218,
+                  -0.07655057311058044,
+                  -0.08151526749134064,
+                  -0.0828494131565094,
+                  -0.013445026241242886,
+                  -0.08024667948484421,
+                  -0.0016073076985776424,
+                  -0.06573394685983658,
+                  -0.07238669693470001,
+                  -0.06277855485677719,
+                  -0.06433940678834915,
+                  -0.05428450182080269,
+                  -0.054244592785835266,
+                  -0.006799031049013138,
+                  -0.04940295219421387,
+                  0,
+                  -0.04847399890422821,
+                  -0.04966495931148529,
+                  -0.04968878999352455,
+                  -0.048928093165159225,
+                  -0.04845617711544037,
+                  -0.021280527114868164,
+                  -0.05006614327430725,
+                  -0.04899996146559715,
+                  -0.021660899743437767,
+                  -0.04786228761076927,
+                  -0.04776284843683243,
+                  -0.00049819570267573,
+                  -0.04770684242248535,
+                  -0.047682344913482666,
+                  -0.0476703904569149,
+                  -0.04766479879617691,
+                  -0.04766784608364105,
+                  -0.01642869971692562,
+                  -0.000982200843282044,
+                  -0.000547047529835254,
+                  0.0476588771424797
+                ],
+                [
+                  -0.042649030685424805,
+                  -0.02182249166071415,
+                  -0.02182249166071415,
+                  -0.04153753072023392,
+                  -0.041530005633831024,
+                  -0.04152727499604225,
+                  -0.04152639955282211,
+                  -0.04152611270546913,
+                  -0.041526053100824356,
+                  -0.027106668800115585,
+                  0,
+                  -0.06194944307208061,
+                  -0.3377276062965393,
+                  0,
+                  -1.1200776100158691,
+                  -1.086684226989746,
+                  0,
+                  2.165234088897705,
+                  0,
+                  0,
+                  0,
+                  -0.0045699491165578365,
+                  -0.03238702192902565,
+                  -0.0045699491165578365,
+                  -0.013842307962477207,
+                  -0.013842307962477207,
+                  -0.013842307962477207,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -2.2067575454711914,
+                  12.078950881958008,
+                  -2.2067577838897705,
+                  -2.206758499145508,
+                  -2.2067575454711914,
+                  -0.14530318975448608,
+                  -0.06442420929670334,
+                  -0.11656566709280014,
+                  -0.10278572142124176,
+                  -0.10422513633966446,
+                  -0.021120252087712288,
+                  -0.046251602470874786,
+                  -0.046251602470874786,
+                  -0.008469682186841965,
+                  -0.008469682186841965,
+                  -0.08306734263896942,
+                  -0.00804599653929472,
+                  -0.0056969886645674706,
+                  -0.0067923287861049175,
+                  -0.0016201069811359048,
+                  -0.1287716031074524,
+                  -0.031046882271766663,
+                  -0.0920080617070198,
+                  -0.06061065196990967,
+                  -0.08535991609096527,
+                  -0.09070541709661484,
+                  -0.09290396422147751,
+                  -0.015441595576703548,
+                  -0.08951571583747864,
+                  -0.0018577809678390622,
+                  -0.07217933982610703,
+                  -0.08046481758356094,
+                  -0.06770535558462143,
+                  -0.07070252299308777,
+                  -0.05717875063419342,
+                  -0.0569002591073513,
+                  -0.006626221816986799,
+                  -0.04817160964012146,
+                  0,
+                  -0.04504791274666786,
+                  -0.04952653497457504,
+                  -0.05599215254187584,
+                  -0.047623470425605774,
+                  -0.045817092061042786,
+                  -0.02281486988067627,
+                  -0.05214522406458855,
+                  -0.0486612506210804,
+                  -0.02337518334388733,
+                  -0.04264235123991966,
+                  -0.042120955884456635,
+                  -0.0005713901482522488,
+                  -0.04182589054107666,
+                  -0.04170142859220505,
+                  -0.041634608060121536,
+                  -0.041587285697460175,
+                  -0.04191241040825844,
+                  -0.01739223301410675,
+                  -0.0011238232254981995,
+                  -0.0006255126208998263,
+                  0.0415248322632069
+                ],
+                [
+                  -0.042329661548137665,
+                  -0.022170791402459145,
+                  -0.022170791402459145,
+                  -0.03176909685134888,
+                  -0.03133672848343849,
+                  -0.030906211584806442,
+                  -0.030567822977900505,
+                  -0.0302742850035429,
+                  -0.030021771788597107,
+                  -0.030928734689950943,
+                  0,
+                  -0.07044380158185959,
+                  -0.37722283601760864,
+                  0,
+                  -1.127253770828247,
+                  -1.0891320705413818,
+                  0,
+                  2.1764605045318604,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.030958984047174454,
+                  0,
+                  -0.010000049136579037,
+                  -0.010000049136579037,
+                  -0.010000049136579037,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -2.203939437866211,
+                  -2.203939437866211,
+                  12.081768989562988,
+                  -2.20393967628479,
+                  -2.2039403915405273,
+                  -0.16519105434417725,
+                  -0.07323022931814194,
+                  -0.1263427883386612,
+                  -0.11626371741294861,
+                  -0.11792363971471786,
+                  -0.024007195606827736,
+                  -0.05257372558116913,
+                  -0.05257372558116913,
+                  -0.009627378545701504,
+                  -0.009627378545701504,
+                  -0.09328426420688629,
+                  -0.009149692952632904,
+                  -0.006480739451944828,
+                  -0.007731084246188402,
+                  -0.0018449279014021158,
+                  -0.14613495767116547,
+                  -0.0353495217859745,
+                  -0.10463427007198334,
+                  -0.06271244585514069,
+                  -0.09191247075796127,
+                  -0.10275699943304062,
+                  -0.10528331995010376,
+                  -0.017588607966899872,
+                  -0.10144602507352829,
+                  -0.002137651899829507,
+                  -0.07908836752176285,
+                  -0.08888541907072067,
+                  -0.0738169252872467,
+                  -0.077519990503788,
+                  -0.061374831944704056,
+                  -0.06087791919708252,
+                  -0.007455429527908564,
+                  -0.0493813119828701,
+                  0,
+                  -0.044896356761455536,
+                  -0.052647579461336136,
+                  -0.06127448379993439,
+                  -0.049610864371061325,
+                  -0.04742654785513878,
+                  -0.02538500539958477,
+                  -0.055274393409490585,
+                  -0.05148542672395706,
+                  -0.02607102133333683,
+                  -0.04026283323764801,
+                  -0.03798721730709076,
+                  -0.0006493852124549448,
+                  -0.036368489265441895,
+                  -0.035168811678886414,
+                  -0.03474046289920807,
+                  -0.03388187289237976,
+                  -0.04050488770008087,
+                  -0.01840129680931568,
+                  -0.00127960997633636,
+                  -0.0007125506526790559,
+                  0.027480357044433388
+                ],
+                [
+                  -0.043199848383665085,
+                  -0.02186180092394352,
+                  -0.02186180092394352,
+                  -0.029183315113186836,
+                  -0.02834206633269787,
+                  -0.027522524818778038,
+                  -0.026724249124526978,
+                  -0.025946814566850662,
+                  -0.02518978714942932,
+                  -0.034860461950302124,
+                  0,
+                  -0.0789579525589943,
+                  -0.41874632239341736,
+                  0,
+                  -1.1418712139129639,
+                  -1.0988662242889404,
+                  0,
+                  2.215404510498047,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.03476176783442497,
+                  0,
+                  -0.0044281864538788795,
+                  -0.0044281864538788795,
+                  -0.0044281864538788795,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -2.193953514099121,
+                  -2.193952798843384,
+                  -2.193952798843384,
+                  12.091755867004395,
+                  -2.193953037261963,
+                  -0.1850888431072235,
+                  -0.08202788233757019,
+                  -0.14164264500141144,
+                  -0.12999427318572998,
+                  -0.13186489045619965,
+                  -0.02689235471189022,
+                  -0.05889122560620308,
+                  -0.05889122560620308,
+                  -0.0107838474214077,
+                  -0.0107838474214077,
+                  -0.0998399555683136,
+                  -0.010256078094244003,
+                  -0.007268593646585941,
+                  -0.008678950369358063,
+                  -0.0020727969240397215,
+                  -0.1642794907093048,
+                  -0.03978928178548813,
+                  -0.11786747723817825,
+                  -0.06864317506551743,
+                  -0.10235331207513809,
+                  -0.11536969244480133,
+                  -0.11827093362808228,
+                  -0.019768716767430305,
+                  -0.11395764350891113,
+                  -0.002442276570945978,
+                  -0.08796610683202744,
+                  -0.09944320470094681,
+                  -0.08211233466863632,
+                  -0.08616457879543304,
+                  -0.0658121407032013,
+                  -0.06507162749767303,
+                  -0.008334347978234291,
+                  -0.05164732411503792,
+                  0,
+                  -0.04605790227651596,
+                  -0.055850621312856674,
+                  -0.06876814365386963,
+                  -0.052273303270339966,
+                  -0.048827074468135834,
+                  -0.02640688791871071,
+                  -0.05922555550932884,
+                  -0.05467580631375313,
+                  -0.028809217736124992,
+                  -0.04014290124177933,
+                  -0.038387950509786606,
+                  -0.001068504061549902,
+                  -0.03576233237981796,
+                  -0.03449704498052597,
+                  -0.03345564752817154,
+                  -0.03244335949420929,
+                  -0.04219631478190422,
+                  -0.01921435445547104,
+                  -0.00144721451215446,
+                  -0.0008087068563327193,
+                  -0.021450365433558157
+                ],
+                [
+                  -0.04442577436566353,
+                  -0.02299703098833561,
+                  -0.02299703098833561,
+                  -0.02876090072095394,
+                  -0.02788916416466236,
+                  -0.027041791006922722,
+                  -0.026218188926577568,
+                  -0.025417795404791832,
+                  -0.024640044197440147,
+                  -0.03850668668746948,
+                  0,
+                  -0.08639954775571823,
+                  -0.4600205421447754,
+                  0,
+                  -1.1380290985107422,
+                  -1.0904563665390015,
+                  0,
+                  2.2627596855163574,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.03833384066820145,
+                  0,
+                  -0.0023769584950059652,
+                  -0.0023769584950059652,
+                  -0.0023769584950059652,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -2.186206340789795,
+                  -2.186206817626953,
+                  -2.186206102371216,
+                  -2.186206102371216,
+                  12.099502563476562,
+                  -0.2024039626121521,
+                  -0.08965685963630676,
+                  -0.15549200773239136,
+                  -0.13567358255386353,
+                  -0.13840565085411072,
+                  -0.029396357014775276,
+                  -0.06437253952026367,
+                  -0.06437253952026367,
+                  -0.011786402203142643,
+                  -0.011786402203142643,
+                  -0.10965526849031448,
+                  -0.011223293840885162,
+                  -0.007961914874613285,
+                  -0.00952180940657854,
+                  -0.0022772145457565784,
+                  -0.18181370198726654,
+                  -0.043945297598838806,
+                  -0.1307104378938675,
+                  -0.07096783816814423,
+                  -0.11238084733486176,
+                  -0.12762351334095,
+                  -0.12837132811546326,
+                  -0.021732641384005547,
+                  -0.12616148591041565,
+                  -0.0027587127406150103,
+                  -0.09414359927177429,
+                  -0.10971727967262268,
+                  -0.09009584039449692,
+                  -0.09225203096866608,
+                  -0.06936623901128769,
+                  -0.06835126876831055,
+                  -0.009218117222189903,
+                  -0.05379423126578331,
+                  0,
+                  -0.047203343361616135,
+                  -0.0588817298412323,
+                  -0.07598918676376343,
+                  -0.05471443012356758,
+                  -0.050714701414108276,
+                  -0.029037050902843475,
+                  -0.06289679557085037,
+                  -0.05812038853764534,
+                  -0.030603263527154922,
+                  -0.040918681770563126,
+                  -0.037739090621471405,
+                  -0.0011994644301012158,
+                  -0.035833828151226044,
+                  -0.03446574509143829,
+                  -0.0333661213517189,
+                  -0.03229990601539612,
+                  -0.04411311075091362,
+                  -0.020926982164382935,
+                  -0.0016139453509822488,
+                  -0.0009065367630682886,
+                  -0.07655219829985016
+                ],
+                [
+                  -1.4932301044464111,
+                  -0.7466157078742981,
+                  -0.7466157078742981,
+                  -1.4931901693344116,
+                  -1.4931864738464355,
+                  -1.4931825399398804,
+                  -1.4931784868240356,
+                  -1.4931743144989014,
+                  -1.4931697845458984,
+                  -0.33321037888526917,
+                  -0.20282956957817078,
+                  -0.9571029543876648,
+                  -1.9227436780929565,
+                  0,
+                  -0.8155987858772278,
+                  -0.3464091420173645,
+                  -0.33121588826179504,
+                  -1.2468810081481934,
+                  0,
+                  0,
+                  0,
+                  -0.2368757128715515,
+                  -1.0193641185760498,
+                  -0.2368757128715515,
+                  -0.4977378845214844,
+                  -0.4977378845214844,
+                  -0.4977378845214844,
+                  -0.1786891669034958,
+                  -0.1786891669034958,
+                  -0.1786891669034958,
+                  -0.33880752325057983,
+                  -0.33880752325057983,
+                  -0.24633970856666565,
+                  -0.24633824825286865,
+                  -0.24633674323558807,
+                  -0.2463352084159851,
+                  -0.24633356928825378,
+                  -0.28713178634643555,
+                  0.2884450852870941,
+                  12.79153823852539,
+                  12.791544914245605,
+                  12.791666984558105,
+                  1.24379563331604,
+                  -6.395248889923096,
+                  -6.395248889923096,
+                  6.905137062072754,
+                  6.905137062072754,
+                  -1.9751511812210083,
+                  -0.47150230407714844,
+                  -0.4086860120296478,
+                  -0.5181451439857483,
+                  -0.11662741750478745,
+                  -1.5947340726852417,
+                  -0.25710228085517883,
+                  -1.1943098306655884,
+                  -1.4932578802108765,
+                  -1.4932748079299927,
+                  -1.4932548999786377,
+                  -1.4932527542114258,
+                  -0.15116627514362335,
+                  -1.4932507276535034,
+                  0,
+                  -1.493248701095581,
+                  -1.4932465553283691,
+                  -1.4932445287704468,
+                  -1.4932422637939453,
+                  -1.493236780166626,
+                  -1.4932401180267334,
+                  -0.29895302653312683,
+                  -1.493234395980835,
+                  -8.474720001220703,
+                  -4.8773393630981445,
+                  -1.781120777130127,
+                  -3.5968210697174072,
+                  -1.493232011795044,
+                  -1.4932292699813843,
+                  -0.366860568523407,
+                  -1.493226408958435,
+                  -1.4932235479354858,
+                  -0.35948529839515686,
+                  -1.4932206869125366,
+                  -1.493217945098877,
+                  0,
+                  -1.4932149648666382,
+                  -1.4932119846343994,
+                  -1.4932087659835815,
+                  -1.4932054281234741,
+                  -1.4932019710540771,
+                  -0.31794998049736023,
+                  0,
+                  0,
+                  1.4932535019072688
+                ],
+                [
+                  -0.2874918282032013,
+                  -0.14374594390392303,
+                  -0.14374594390392303,
+                  -0.2874917685985565,
+                  -0.28749167919158936,
+                  -0.28749164938926697,
+                  -0.2874915599822998,
+                  -0.28749150037765503,
+                  -0.28749141097068787,
+                  -2.273611307144165,
+                  -1.3155027627944946,
+                  -0.5160177946090698,
+                  -0.25494879484176636,
+                  -0.3754045069217682,
+                  -1.3820997476577759,
+                  -0.4238048195838928,
+                  0,
+                  -0.2683216333389282,
+                  -0.1004127636551857,
+                  -0.07369092106819153,
+                  -0.04564235359430313,
+                  0,
+                  -0.49251788854599,
+                  0,
+                  -0.09583059698343277,
+                  -0.09583059698343277,
+                  -0.09583059698343277,
+                  -0.5073671936988831,
+                  -0.5073671936988831,
+                  -0.5073671936988831,
+                  0,
+                  0,
+                  -0.019170116633176804,
+                  -0.019170105457305908,
+                  -0.01917009800672531,
+                  -0.019170088693499565,
+                  -0.01917007565498352,
+                  -0.0037632272578775883,
+                  -1.4121758937835693,
+                  -0.9036561250686646,
+                  -0.6618819236755371,
+                  -0.8396278023719788,
+                  -0.8396278023719788,
+                  -0.8396278023719788,
+                  -0.8396278023719788,
+                  -0.06376383453607559,
+                  -0.06376383453607559,
+                  13.998210906982422,
+                  0.7747381329536438,
+                  0.7747369408607483,
+                  0.7747584581375122,
+                  -0.000027717684133676812,
+                  -0.6978137493133545,
+                  -0.28386616706848145,
+                  -0.559827446937561,
+                  -0.28749194741249084,
+                  -0.2874920666217804,
+                  -0.4483307898044586,
+                  -0.47186556458473206,
+                  -0.2299637794494629,
+                  -0.45371493697166443,
+                  -0.2865878939628601,
+                  -0.32001492381095886,
+                  -0.3488435745239258,
+                  -0.30883651971817017,
+                  -0.28749191761016846,
+                  -0.28749191761016846,
+                  -0.28749191761016846,
+                  -0.003055992303416133,
+                  -0.28749188780784607,
+                  -1.0187766551971436,
+                  -0.5258817076683044,
+                  -0.28749188780784607,
+                  -0.38861486315727234,
+                  -0.28749188780784607,
+                  -0.28749188780784607,
+                  -0.08132405579090118,
+                  -0.28749188780784607,
+                  -0.2874918580055237,
+                  -0.08042161166667938,
+                  -0.2874918580055237,
+                  -0.2874918580055237,
+                  0,
+                  -0.2874918580055237,
+                  -0.2874918282032013,
+                  -0.2874918282032013,
+                  -0.2874918282032013,
+                  -0.2874918282032013,
+                  -0.06970918923616409,
+                  0,
+                  0,
+                  0.28749209381841245
+                ],
+                [
+                  -0.9519774913787842,
+                  -0.48153313994407654,
+                  -0.48153313994407654,
+                  -0.9094864726066589,
+                  -0.906908392906189,
+                  -0.9046406745910645,
+                  -0.9026395082473755,
+                  -0.9008619785308838,
+                  -0.8992690443992615,
+                  0.1691218763589859,
+                  -0.46305179595947266,
+                  -0.6465185880661011,
+                  0.07573027908802032,
+                  -0.02491888590157032,
+                  -0.24519769847393036,
+                  -0.5676002502441406,
+                  -0.1652747094631195,
+                  -0.7633477449417114,
+                  -0.12768316268920898,
+                  -0.1276819258928299,
+                  -0.1276778131723404,
+                  -0.1862066388130188,
+                  -0.5132185816764832,
+                  -0.20886178314685822,
+                  -0.31786757707595825,
+                  -0.29521238803863525,
+                  -0.29521238803863525,
+                  -0.18296478688716888,
+                  -0.18296478688716888,
+                  -0.18296478688716888,
+                  -0.30977344512939453,
+                  -0.30977344512939453,
+                  -0.15806280076503754,
+                  -0.15206696093082428,
+                  -0.14723291993141174,
+                  -0.1442010998725891,
+                  -0.1421751230955124,
+                  -0.3226742446422577,
+                  -0.3226742446422577,
+                  -0.8917223215103149,
+                  -0.8905578255653381,
+                  -0.8895707130432129,
+                  0,
+                  -0.06954866647720337,
+                  -0.06954866647720337,
+                  0,
+                  0,
+                  -0.8884440660476685,
+                  0,
+                  0,
+                  0,
+                  0,
+                  13.4209566116333,
+                  0.00027652119752019644,
+                  -0.00006153530557639897,
+                  13.420921325683594,
+                  13.42093563079834,
+                  -1.6711496114730835,
+                  -1.674504280090332,
+                  -0.38742950558662415,
+                  -1.6272568702697754,
+                  -0.7991469502449036,
+                  -1.3583123683929443,
+                  -1.4519248008728027,
+                  -1.3064175844192505,
+                  -1.3343526124954224,
+                  -1.1277939081192017,
+                  -1.1356936693191528,
+                  -1.973291277885437,
+                  -2.9178576469421387,
+                  -0.3226742446422577,
+                  -1.022858738899231,
+                  -1.0148911476135254,
+                  -0.8168806433677673,
+                  -0.9935480952262878,
+                  -0.9789947867393494,
+                  -0.38517963886260986,
+                  -1.0108940601348877,
+                  -0.9934894442558289,
+                  -0.3948863446712494,
+                  -0.9467059969902039,
+                  -0.9380466341972351,
+                  -0.012893700040876865,
+                  -0.9308673143386841,
+                  -0.9258658289909363,
+                  -0.9214251041412354,
+                  -0.9176093339920044,
+                  -0.9261167049407959,
+                  -0.31924280524253845,
+                  -0.023506389930844307,
+                  -0.014035673812031746,
+                  0.8647680442626474
+                ],
+                [
+                  -5.730780124664307,
+                  -2.8672850131988525,
+                  -2.8672850131988525,
+                  -5.616791725158691,
+                  -5.6091814041137695,
+                  -5.601561546325684,
+                  -5.593930721282959,
+                  -5.586289882659912,
+                  -5.578639030456543,
+                  1.271082878112793,
+                  -3.18644118309021,
+                  -3.8290417194366455,
+                  0.033993225544691086,
+                  -0.10437814891338348,
+                  -1.309077262878418,
+                  -3.5736091136932373,
+                  -0.8695972561836243,
+                  -4.7784624099731445,
+                  -0.9032334089279175,
+                  -0.8978523015975952,
+                  -0.8911887407302856,
+                  -1.5857316255569458,
+                  -2.547494411468506,
+                  -1.587664008140564,
+                  -1.9040824174880981,
+                  -1.9021499156951904,
+                  -1.9021499156951904,
+                  -0.6394212245941162,
+                  -0.6394212245941162,
+                  -0.6394212245941162,
+                  -2.190260887145996,
+                  -2.190260887145996,
+                  -0.9602819085121155,
+                  -0.9565179347991943,
+                  -0.9527536034584045,
+                  -0.9489815831184387,
+                  -0.9451979398727417,
+                  -1.0116870403289795,
+                  -1.0116870403289795,
+                  -5.547419548034668,
+                  -5.539715766906738,
+                  -5.532001495361328,
+                  0,
+                  -0.05173506587743759,
+                  -0.05173506587743759,
+                  -0.5704195499420166,
+                  -0.5704195499420166,
+                  -5.523195743560791,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -5.618220329284668,
+                  0,
+                  -3.173938751220703,
+                  -5.511289596557617,
+                  -5.607002258300781,
+                  4.454732418060303,
+                  4.378450393676758,
+                  -4.692873001098633,
+                  4.278396129608154,
+                  -0.4515311121940613,
+                  -5.795955181121826,
+                  -5.788581848144531,
+                  -5.781199932098389,
+                  -5.773807048797607,
+                  -5.7553300857543945,
+                  -5.76640510559082,
+                  -2.693000555038452,
+                  -5.747904300689697,
+                  -0.42687493562698364,
+                  -5.740466594696045,
+                  -5.733020305633545,
+                  -0.7232916355133057,
+                  -5.725564956665039,
+                  -5.718099117279053,
+                  -0.3413985073566437,
+                  -5.710622787475586,
+                  -5.703137397766113,
+                  -0.3588230311870575,
+                  -5.695641994476318,
+                  -5.688135623931885,
+                  -0.01171807385981083,
+                  -5.680620193481445,
+                  -5.673095226287842,
+                  -5.6655592918396,
+                  -5.65801477432251,
+                  -5.650459289550781,
+                  -0.33032551407814026,
+                  -0.016147715970873833,
+                  -0.009081726893782616,
+                  5.846105673977175
+                ],
+                [
+                  -5.718892574310303,
+                  -2.861325263977051,
+                  -2.861325263977051,
+                  -5.605828762054443,
+                  -5.598280906677246,
+                  -5.590723514556885,
+                  -5.583155155181885,
+                  -5.575577259063721,
+                  -5.567989826202393,
+                  -1.3453556299209595,
+                  -1.649888277053833,
+                  -2.675132989883423,
+                  -0.6505195498466492,
+                  -0.01983986422419548,
+                  -2.937006711959839,
+                  -1.8668471574783325,
+                  -0.9556108713150024,
+                  -4.780745506286621,
+                  -0.2814368009567261,
+                  -0.2775927782058716,
+                  -0.27103036642074585,
+                  -1.5759106874465942,
+                  -2.5571141242980957,
+                  -1.5764760971069336,
+                  -1.899408221244812,
+                  -1.8988428115844727,
+                  -1.8988428115844727,
+                  -1.0197702646255493,
+                  -1.0197702646255493,
+                  -1.0197702646255493,
+                  -1.375432014465332,
+                  -1.375432014465332,
+                  -0.9467163681983948,
+                  -0.9429836273193359,
+                  -0.9392503499984741,
+                  -0.9355096817016602,
+                  -0.9317575693130493,
+                  -1.0178356170654297,
+                  -1.0178356170654297,
+                  -5.537724494934082,
+                  -5.530087471008301,
+                  -5.5224409103393555,
+                  0,
+                  -0.05258709564805031,
+                  -0.05258709564805031,
+                  -0.5539332032203674,
+                  -0.5539332032203674,
+                  -5.513708114624023,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -5.607931137084961,
+                  0,
+                  -3.233635187149048,
+                  -5.50190544128418,
+                  -5.596806526184082,
+                  -5.483136177062988,
+                  -5.475426197052002,
+                  -0.02092764526605606,
+                  -5.467707633972168,
+                  0.3063458502292633,
+                  4.440611362457275,
+                  4.421440124511719,
+                  4.243410110473633,
+                  -5.761566638946533,
+                  -5.743238925933838,
+                  -5.7542243003845215,
+                  -2.620326280593872,
+                  -5.7358717918396,
+                  -0.44877156615257263,
+                  -5.728496551513672,
+                  -5.72111177444458,
+                  -0.8160528540611267,
+                  -5.71371603012085,
+                  -5.706310272216797,
+                  -0.3274555206298828,
+                  -5.698896408081055,
+                  -5.691471099853516,
+                  -0.35032179951667786,
+                  -5.684036731719971,
+                  -5.676592826843262,
+                  -0.012319155968725681,
+                  -5.669138431549072,
+                  -5.661674976348877,
+                  -5.654200553894043,
+                  -5.6467180252075195,
+                  -5.639224529266357,
+                  -0.32894614338874817,
+                  -0.01951039396226406,
+                  -0.011556454934179783,
+                  5.833315888517513
+                ],
+                [
+                  -3.67055082321167,
+                  -1.8364567756652832,
+                  -1.8364567756652832,
+                  -3.5989720821380615,
+                  -3.594221830368042,
+                  -3.5894675254821777,
+                  -3.5847086906433105,
+                  -3.5799453258514404,
+                  -3.5751771926879883,
+                  -0.8682070970535278,
+                  -1.0607367753982544,
+                  -1.7178667783737183,
+                  -0.511706531047821,
+                  -0.07471328973770142,
+                  -1.8740770816802979,
+                  -1.1765589714050293,
+                  -0.6423326730728149,
+                  -3.08929181098938,
+                  -0.12449873983860016,
+                  -0.12050309777259827,
+                  -0.11609227955341339,
+                  -0.9657604098320007,
+                  -1.7302197217941284,
+                  -0.9692848324775696,
+                  -1.2214709520339966,
+                  -1.2179466485977173,
+                  -1.2179466485977173,
+                  -0.6539211273193359,
+                  -0.6539211273193359,
+                  -0.6539211273193359,
+                  -0.8903321623802185,
+                  -0.8903321623802185,
+                  -0.5874521136283875,
+                  -0.5850932002067566,
+                  -0.5827341079711914,
+                  -0.5803716778755188,
+                  -0.5780043005943298,
+                  -0.8023796081542969,
+                  -0.8023796081542969,
+                  -3.5568530559539795,
+                  -3.5520737171173096,
+                  -3.5472896099090576,
+                  0,
+                  -0.07877765595912933,
+                  -0.07877765595912933,
+                  -0.162424236536026,
+                  -0.162424236536026,
+                  -3.5418238639831543,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -4.5332746505737305,
+                  -0.6262622475624084,
+                  0.87745600938797,
+                  -3.53631854057312,
+                  -3.598069906234741,
+                  -3.5262293815612793,
+                  -3.5214216709136963,
+                  -0.02890239655971527,
+                  -3.516608953475952,
+                  0.43069303035736084,
+                  -3.511791229248047,
+                  -3.506969690322876,
+                  -3.502142906188965,
+                  5.474578380584717,
+                  7.934967041015625,
+                  8.04474925994873,
+                  9.720694541931152,
+                  -4.6739606857299805,
+                  -0.6204900145530701,
+                  -3.6765425205230713,
+                  -3.671865940093994,
+                  -1.2063746452331543,
+                  -3.667184829711914,
+                  -3.6624999046325684,
+                  -0.4730752408504486,
+                  -3.6578097343444824,
+                  -3.6531155109405518,
+                  -0.502120316028595,
+                  -3.6484169960021973,
+                  -3.64371395111084,
+                  -0.016498630866408348,
+                  -3.6390063762664795,
+                  -3.634294271469116,
+                  -3.629578113555908,
+                  -3.624857187271118,
+                  -3.620131731033325,
+                  -0.3515968918800354,
+                  -0.029232749715447426,
+                  -0.017697330564260483,
+                  3.7437437944831093
+                ],
+                [
+                  -0.20935705304145813,
+                  -0.1085222139954567,
+                  -0.1085222139954567,
+                  -0.1974020004272461,
+                  -0.19740162789821625,
+                  -0.197401225566864,
+                  -0.19740082323551178,
+                  -0.19740042090415955,
+                  -0.19740000367164612,
+                  -0.1546603888273239,
+                  -0.29741743206977844,
+                  -0.3178497552871704,
+                  -0.38214534521102905,
+                  -0.08408907800912857,
+                  -0.3801872432231903,
+                  -0.40851259231567383,
+                  -0.04582977294921875,
+                  -0.22882381081581116,
+                  -0.053486213088035583,
+                  -0.04098658636212349,
+                  -0.029040157794952393,
+                  0,
+                  -0.4083716869354248,
+                  0,
+                  -0.06580167263746262,
+                  -0.06580167263746262,
+                  -0.06580167263746262,
+                  -0.010168795473873615,
+                  -0.010168795473873615,
+                  -0.010168795473873615,
+                  -0.0576864555478096,
+                  -0.0576864555478096,
+                  -0.017207130789756775,
+                  -0.009679064154624939,
+                  -0.00837685912847519,
+                  -0.007226359564810991,
+                  -0.0062208701856434345,
+                  -0.4769081771373749,
+                  -0.4769081771373749,
+                  -0.19739949703216553,
+                  -0.1973990499973297,
+                  -0.1973986029624939,
+                  0,
+                  -0.015043042600154877,
+                  -0.015043042600154877,
+                  0,
+                  0,
+                  -0.1973981261253357,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -3.070922374725342,
+                  -1.105674147605896,
+                  0.000368873355910182,
+                  -0.1973976194858551,
+                  -0.19740213453769684,
+                  -0.19739675521850586,
+                  -0.1973962038755417,
+                  -0.01596103236079216,
+                  -0.19739565253257751,
+                  0.916932225227356,
+                  -0.21279437839984894,
+                  -0.21279437839984894,
+                  -0.21279437839984894,
+                  -0.2300192266702652,
+                  -0.2300192266702652,
+                  -0.19739513099193573,
+                  -1.9672070741653442,
+                  14.087995529174805,
+                  -0.4769081771373749,
+                  -0.4924650192260742,
+                  -0.4237328767776489,
+                  -0.6641747355461121,
+                  -0.3188527524471283,
+                  -0.28630518913269043,
+                  -0.17629003524780273,
+                  -0.4178263247013092,
+                  -0.39970871806144714,
+                  -0.252421498298645,
+                  -0.21212445199489594,
+                  -0.20326738059520721,
+                  -0.013091529719531536,
+                  -0.197403684258461,
+                  -0.19740340113639832,
+                  -0.19740305840969086,
+                  -0.1974027156829834,
+                  -0.2412816286087036,
+                  -0.12576879560947418,
+                  -0.009838834404945374,
+                  -0.006221657618880272,
+                  0.19740775375596006
+                ],
+                [
+                  -0.19136708974838257,
+                  -0.0992601290345192,
+                  -0.0992601290345192,
+                  -0.1827593594789505,
+                  -0.1827557533979416,
+                  -0.1827528029680252,
+                  -0.18275026977062225,
+                  -0.18274801969528198,
+                  -0.18274609744548798,
+                  -0.05246269330382347,
+                  -0.05246269330382347,
+                  -0.2493322193622589,
+                  -0.11764244735240936,
+                  -0.00729724345728755,
+                  -0.12424124777317047,
+                  -0.09125011414289474,
+                  -0.029997872188687325,
+                  -0.16320465505123138,
+                  -0.008961067534983158,
+                  -0.006057825870811939,
+                  -0.0038116455543786287,
+                  -0.1713387817144394,
+                  0.28740453720092773,
+                  -0.29879525303840637,
+                  -0.17133828997612,
+                  -0.03870266675949097,
+                  -0.03870266675949097,
+                  -0.01665923185646534,
+                  -0.01665923185646534,
+                  -0.01665923185646534,
+                  -0.030192654579877853,
+                  -0.030192654579877853,
+                  -0.028488589450716972,
+                  -0.025479258969426155,
+                  -0.02258240059018135,
+                  -0.019903359934687614,
+                  -0.019595801830291748,
+                  -0.9462981224060059,
+                  -0.7702519297599792,
+                  -0.2874263525009155,
+                  -0.2874266505241394,
+                  -0.1827315390110016,
+                  -0.10727681964635849,
+                  -0.13037092983722687,
+                  -0.13037092983722687,
+                  -0.47375157475471497,
+                  -0.47375157475471497,
+                  -0.1827315390110016,
+                  -0.026507195085287094,
+                  -0.011697350069880486,
+                  -0.002032061107456684,
+                  0,
+                  -0.18273159861564636,
+                  -0.012118513695895672,
+                  -0.11828731745481491,
+                  -0.1827315092086792,
+                  -0.18273158371448517,
+                  -0.182731494307518,
+                  -0.1827314794063568,
+                  -0.005726412869989872,
+                  -0.18273146450519562,
+                  0,
+                  -0.18273143470287323,
+                  -0.18273141980171204,
+                  -0.18273138999938965,
+                  -0.18273136019706726,
+                  -0.18273131549358368,
+                  -0.18273133039474487,
+                  -0.06444422900676727,
+                  -0.18273130059242249,
+                  1.7165822982788086,
+                  14.1029691696167,
+                  -2.419414758682251,
+                  -4.348399639129639,
+                  -1.2800902128219604,
+                  -0.5212033987045288,
+                  -0.11036453396081924,
+                  -0.25764742493629456,
+                  -0.4417690634727478,
+                  -0.3539316654205322,
+                  -0.2484418749809265,
+                  -0.20626549422740936,
+                  -0.044529832899570465,
+                  -0.18444912135601044,
+                  -0.18277743458747864,
+                  -0.18277013301849365,
+                  -0.1827651411294937,
+                  -0.32126861810684204,
+                  -0.2540808618068695,
+                  -0.0934198722243309,
+                  -0.07339310646057129,
+                  0.18273178636572654
+                ],
+                [
+                  -0.16643647849559784,
+                  -0.08429361879825592,
+                  -0.08429361879825592,
+                  -0.1222115084528923,
+                  -0.12221138924360275,
+                  -0.12221125513315201,
+                  -0.12221112847328186,
+                  -0.12221098691225052,
+                  -0.12221084535121918,
+                  -0.06053389981389046,
+                  -0.06053389981389046,
+                  -0.09582283347845078,
+                  -0.061459731310606,
+                  -0.007874691858887672,
+                  -0.10587694495916367,
+                  -0.07796265929937363,
+                  -0.02636648155748844,
+                  -0.149109348654747,
+                  -0.008144178427755833,
+                  -0.005397065542638302,
+                  -0.0025641717948019505,
+                  -0.09766735881567001,
+                  0.12208373099565506,
+                  -0.14661121368408203,
+                  -0.09766498953104019,
+                  -0.042137954384088516,
+                  -0.042137954384088516,
+                  -0.028688549995422363,
+                  -0.028688549995422363,
+                  -0.028688549995422363,
+                  -0.025731507688760757,
+                  -0.025731507688760757,
+                  -0.02727372944355011,
+                  -0.02439863793551922,
+                  -0.021652819588780403,
+                  -0.01912125013768673,
+                  -0.016832971945405006,
+                  -0.1398082673549652,
+                  -0.13895733654499054,
+                  -0.12213589251041412,
+                  -0.12214135378599167,
+                  -0.12220099568367004,
+                  0,
+                  -0.05652559548616409,
+                  -0.05652559548616409,
+                  -0.07111755758523941,
+                  -0.07111755758523941,
+                  -0.12220064550638199,
+                  -0.00042545661563053727,
+                  0,
+                  0,
+                  0,
+                  -0.12220395356416702,
+                  -0.008986135013401508,
+                  -0.08299559354782104,
+                  -0.122200146317482,
+                  -0.12220359593629837,
+                  -0.12219936400651932,
+                  -0.12219898402690887,
+                  -0.006727123633027077,
+                  -0.12219860404729843,
+                  0,
+                  -0.1221982017159462,
+                  -0.12219779193401337,
+                  -0.12219738960266113,
+                  -0.12219695001840591,
+                  -0.12219590693712234,
+                  -0.12219652533531189,
+                  -0.039205536246299744,
+                  -0.12219545990228653,
+                  0.2781553864479065,
+                  -0.3225226104259491,
+                  14.16267204284668,
+                  0.0014570832718163729,
+                  -4.052672863006592,
+                  -2.668452262878418,
+                  -0.5646591186523438,
+                  -1.3943939208984375,
+                  -0.29192429780960083,
+                  -0.2118625044822693,
+                  -0.19841822981834412,
+                  -0.15995755791664124,
+                  -0.019909821450710297,
+                  -0.133588045835495,
+                  -0.13040511310100555,
+                  -0.12520913779735565,
+                  -0.12436264008283615,
+                  -0.20540940761566162,
+                  -0.13532181084156036,
+                  -0.043107833713293076,
+                  -0.024220716208219528,
+                  0.12221382803167813
+                ],
+                [
+                  -0.14232605695724487,
+                  -0.06711731851100922,
+                  -0.06711731851100922,
+                  -0.10483290255069733,
+                  -0.1048322543501854,
+                  -0.10483158379793167,
+                  -0.10483090579509735,
+                  -0.10483021289110184,
+                  -0.10482951253652573,
+                  -0.059507936239242554,
+                  -0.059507936239242554,
+                  -0.12841694056987762,
+                  -0.0660126805305481,
+                  -0.008642137981951237,
+                  -0.10574374347925186,
+                  -0.08231481909751892,
+                  -0.024417860433459282,
+                  -0.137570321559906,
+                  -0.007186389993876219,
+                  -0.004910532385110855,
+                  -0.003112616017460823,
+                  -0.08416326344013214,
+                  0.10498758405447006,
+                  -0.16309507191181183,
+                  -0.10396663099527359,
+                  -0.033460091799497604,
+                  -0.033460091799497604,
+                  -0.01771109737455845,
+                  -0.01771109737455845,
+                  -0.01771109737455845,
+                  -0.01985037326812744,
+                  -0.01985037326812744,
+                  -0.023025723174214363,
+                  -0.020506655797362328,
+                  -0.018106482923030853,
+                  -0.015902142971754074,
+                  -0.013919302262365818,
+                  -0.33581921458244324,
+                  -0.28943896293640137,
+                  -0.1048613041639328,
+                  -0.1048707664012909,
+                  -0.10482867807149887,
+                  -0.03298364207148552,
+                  -0.05904127657413483,
+                  -0.05904127657413483,
+                  -0.10576188564300537,
+                  -0.10576188564300537,
+                  -0.10482793301343918,
+                  -0.001541120931506157,
+                  0,
+                  0,
+                  0,
+                  -0.10483525693416595,
+                  -0.005168586503714323,
+                  -0.06610684841871262,
+                  -0.10482681542634964,
+                  -0.10483446717262268,
+                  -0.10482508689165115,
+                  -0.1048242598772049,
+                  -0.003497147001326084,
+                  -0.10482341051101685,
+                  0,
+                  -0.1048225536942482,
+                  -0.10482168197631836,
+                  -0.10482077300548553,
+                  -0.10481986403465271,
+                  -0.10481759160757065,
+                  -0.1048189178109169,
+                  -0.03872217237949371,
+                  -0.10481662303209305,
+                  0.6244134306907654,
+                  -0.6892120242118835,
+                  -1.8665764331817627,
+                  0.0016385340131819248,
+                  14.179950714111328,
+                  -4.206272602081299,
+                  -0.6845539212226868,
+                  -1.6382108926773071,
+                  -0.44685739278793335,
+                  -0.36288368701934814,
+                  -0.24490772187709808,
+                  -0.17211346328258514,
+                  -0.04033927619457245,
+                  -0.12568096816539764,
+                  -0.10789518058300018,
+                  -0.1062275692820549,
+                  -0.10493767261505127,
+                  -0.2705218195915222,
+                  -0.20895206928253174,
+                  -0.07120803743600845,
+                  -0.050013426691293716,
+                  0.10484506036380713
+                ],
+                [
+                  -0.44182008504867554,
+                  -0.22154441475868225,
+                  -0.22154441475868225,
+                  -0.406085729598999,
+                  -0.40525931119918823,
+                  -0.4045279026031494,
+                  -0.4038681387901306,
+                  -0.40326112508773804,
+                  -0.4026583433151245,
+                  -0.17466692626476288,
+                  -0.17466692626476288,
+                  -0.5863454937934875,
+                  -0.28601163625717163,
+                  -0.028921548277139664,
+                  -0.3733259439468384,
+                  -0.29374805092811584,
+                  -0.07465142011642456,
+                  -0.4480573236942291,
+                  -0.019849147647619247,
+                  -0.01310227531939745,
+                  -0.00794804934412241,
+                  -0.2927769422531128,
+                  0.3728651702404022,
+                  -0.4532773494720459,
+                  -0.29277387261390686,
+                  -0.10580924153327942,
+                  -0.10580924153327942,
+                  -0.045267682522535324,
+                  -0.045267682522535324,
+                  -0.045267682522535324,
+                  -0.05874862149357796,
+                  -0.05874862149357796,
+                  -0.05707589164376259,
+                  -0.05027807876467705,
+                  -0.043919000774621964,
+                  -0.038162216544151306,
+                  -0.03304903209209442,
+                  -0.6884657144546509,
+                  -0.37868550419807434,
+                  -0.3731261193752289,
+                  -0.3731287121772766,
+                  -0.39429333806037903,
+                  -0.1869434267282486,
+                  -0.2680057883262634,
+                  -0.2680057883262634,
+                  -0.26300808787345886,
+                  -0.26300808787345886,
+                  -0.39319127798080444,
+                  -0.011479672975838184,
+                  -0.0023196435067802668,
+                  0,
+                  0,
+                  -0.3948446214199066,
+                  -0.025185424834489822,
+                  -0.26176002621650696,
+                  -0.3927581310272217,
+                  -0.3945539891719818,
+                  -0.3924984633922577,
+                  -0.3922518193721771,
+                  -0.019497742876410484,
+                  -0.3919983208179474,
+                  0,
+                  -0.3917207717895508,
+                  -0.3915172815322876,
+                  -0.391241192817688,
+                  -0.3910391926765442,
+                  -0.39047756791114807,
+                  -0.3907577693462372,
+                  -0.13053502142429352,
+                  -0.390210896730423,
+                  1.0673798322677612,
+                  -1.1738439798355103,
+                  -4.0231804847717285,
+                  0.000059560388763202354,
+                  -3.095905303955078,
+                  13.91242504119873,
+                  0.0000747442536521703,
+                  13.9124174118042,
+                  -1.741145133972168,
+                  -1.4073834419250488,
+                  -0.7018040418624878,
+                  -0.5450006723403931,
+                  -0.186242014169693,
+                  -0.47782960534095764,
+                  -0.42721837759017944,
+                  -0.4114411473274231,
+                  -0.40917444229125977,
+                  -0.7310436964035034,
+                  -0.5119199752807617,
+                  -0.09318633377552032,
+                  -0.07267104089260101,
+                  0.37321753664738655
+                ],
+                [
+                  -0.44137337803840637,
+                  -0.2270205169916153,
+                  -0.2270205169916153,
+                  -0.395364910364151,
+                  -0.39323940873146057,
+                  -0.39175423979759216,
+                  -0.39175355434417725,
+                  -0.39175286889076233,
+                  -0.3917522132396698,
+                  -0.11300858110189438,
+                  -0.11300858110189438,
+                  -0.19218838214874268,
+                  -0.08464668691158295,
+                  -0.011680633760988712,
+                  -0.2281922847032547,
+                  -0.13343888521194458,
+                  -0.0648522824048996,
+                  -0.35539814829826355,
+                  -0.01524648629128933,
+                  -0.009563530795276165,
+                  -0.006979433819651604,
+                  0,
+                  -12.449819564819336,
+                  0,
+                  -0.13951969146728516,
+                  -0.13951969146728516,
+                  -0.13951969146728516,
+                  -0.07582676410675049,
+                  -0.07582676410675049,
+                  -0.07582676410675049,
+                  -0.09385589510202408,
+                  -0.09385589510202408,
+                  -0.07189083844423294,
+                  -0.06749006360769272,
+                  -0.06379718333482742,
+                  -0.060284361243247986,
+                  -0.05720004811882973,
+                  -0.1094864085316658,
+                  -0.10682966560125351,
+                  -0.39175155758857727,
+                  -0.3917508125305176,
+                  -0.39175012707710266,
+                  -0.0018140331376343966,
+                  -0.03830809146165848,
+                  -0.03830809146165848,
+                  0,
+                  0,
+                  -0.39174941182136536,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.3917565643787384,
+                  -0.026113254949450493,
+                  -0.25234684348106384,
+                  -0.391748309135437,
+                  -0.3917557895183563,
+                  -0.3917466402053833,
+                  -0.39174580574035645,
+                  -0.012486112304031849,
+                  -0.39174503087997437,
+                  0,
+                  -0.3917442560195923,
+                  -0.39174339175224304,
+                  -0.39174243807792664,
+                  -0.3917416036128998,
+                  -0.3917393982410431,
+                  -0.39174070954322815,
+                  -0.13940364122390747,
+                  -0.39173850417137146,
+                  0,
+                  -0.39173758029937744,
+                  -0.39173659682273865,
+                  -0.14052532613277435,
+                  -0.3917355537414551,
+                  -0.3917345404624939,
+                  -0.08742472529411316,
+                  -0.3917335271835327,
+                  13.892742156982422,
+                  0.0018914728425443172,
+                  -2.053316593170166,
+                  -2.076686143875122,
+                  -0.819209098815918,
+                  -2.071260452270508,
+                  -2.051987409591675,
+                  -2.0372543334960938,
+                  -2.024564027786255,
+                  -0.996145486831665,
+                  -0.8384081125259399,
+                  0,
+                  0,
+                  0.39176664308572917
+                ],
+                [
+                  -0.51011723279953,
+                  -0.26584678888320923,
+                  -0.26584678888320923,
+                  -0.3800176978111267,
+                  -0.3733740746974945,
+                  -0.3678053319454193,
+                  -0.36319828033447266,
+                  -0.35972434282302856,
+                  -0.3576655983924866,
+                  -0.1557769924402237,
+                  -0.1557769924402237,
+                  -0.2559712827205658,
+                  -0.1490289866924286,
+                  -0.019817503169178963,
+                  -0.2920566499233246,
+                  -0.2023434042930603,
+                  -0.07700265944004059,
+                  -0.41257795691490173,
+                  -0.022369204089045525,
+                  -0.014728391543030739,
+                  -0.009014000184834003,
+                  -0.44136783480644226,
+                  0.6155952215194702,
+                  -0.7359119057655334,
+                  -0.43755748867988586,
+                  -0.132620707154274,
+                  -0.132620707154274,
+                  -0.0846974179148674,
+                  -0.0846974179148674,
+                  -0.0846974179148674,
+                  -0.0857040137052536,
+                  -0.0857040137052536,
+                  -0.08051333576440811,
+                  -0.07244730740785599,
+                  -0.06475960463285446,
+                  -0.05764857679605484,
+                  -0.05347519740462303,
+                  -0.3686644732952118,
+                  -0.3613559603691101,
+                  -0.35642266273498535,
+                  -0.35617050528526306,
+                  -0.35617050528526306,
+                  -0.00499311275780201,
+                  -0.061515748500823975,
+                  -0.061515748500823975,
+                  -0.22509440779685974,
+                  -0.22509440779685974,
+                  -0.3561704754829407,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.3561704754829407,
+                  -0.03480139747262001,
+                  -0.2539278268814087,
+                  -0.3561704754829407,
+                  -0.3561704754829407,
+                  -0.3561704456806183,
+                  -0.3561704456806183,
+                  -0.019929105415940285,
+                  -0.3561704158782959,
+                  0,
+                  -0.3561704158782959,
+                  -0.3561704158782959,
+                  -0.3561704158782959,
+                  -0.3561703860759735,
+                  -0.3561703562736511,
+                  -0.3561703860759735,
+                  -0.10224258154630661,
+                  -0.35617032647132874,
+                  0,
+                  -0.35617026686668396,
+                  -0.3561702370643616,
+                  -0.15749332308769226,
+                  -0.3561701774597168,
+                  -0.356170117855072,
+                  -0.08487005531787872,
+                  -0.35617005825042725,
+                  -0.7439202666282654,
+                  0.12833233177661896,
+                  13.929544448852539,
+                  13.929534912109375,
+                  -0.000011633114809228573,
+                  -3.5005815029144287,
+                  -2.6802845001220703,
+                  -2.8659720420837402,
+                  -2.356227397918701,
+                  -0.8385207653045654,
+                  -0.6321187019348145,
+                  -0.04100180044770241,
+                  -0.021120328456163406,
+                  0.3561707316742009
+                ],
+                [
+                  -0.5264245867729187,
+                  -0.27246907353401184,
+                  -0.27246907353401184,
+                  -0.37641459703445435,
+                  -0.37106379866600037,
+                  -0.3667723536491394,
+                  -0.36358532309532166,
+                  -0.36189621686935425,
+                  -0.3608725070953369,
+                  -0.17215079069137573,
+                  -0.17215079069137573,
+                  -0.2717186212539673,
+                  -0.16766344010829926,
+                  -0.024013463407754898,
+                  -0.3096122145652771,
+                  -0.22205156087875366,
+                  -0.07847490906715393,
+                  -0.42308175563812256,
+                  -0.019724730402231216,
+                  -0.01305379718542099,
+                  -0.007981660775840282,
+                  -0.48539265990257263,
+                  0.6999835968017578,
+                  -0.8407659530639648,
+                  -0.4862249195575714,
+                  -0.11795857548713684,
+                  -0.11795857548713684,
+                  -0.08214137703180313,
+                  -0.08214137703180313,
+                  -0.08214137703180313,
+                  -0.07960008084774017,
+                  -0.07960008084774017,
+                  -0.07706110179424286,
+                  -0.06892170757055283,
+                  -0.061203766614198685,
+                  -0.05762263759970665,
+                  -0.05115313455462456,
+                  -0.4193609356880188,
+                  -0.411940336227417,
+                  -0.36064669489860535,
+                  -0.36003419756889343,
+                  -0.36003416776657104,
+                  -0.005125665105879307,
+                  -0.06400402635335922,
+                  -0.06400402635335922,
+                  -0.2502330541610718,
+                  -0.2502330541610718,
+                  -0.36003416776657104,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.36003419756889343,
+                  -0.03596191480755806,
+                  -0.2565653324127197,
+                  -0.36003416776657104,
+                  -0.36003419756889343,
+                  -0.36003413796424866,
+                  -0.36003410816192627,
+                  -0.02099028043448925,
+                  -0.36003410816192627,
+                  0,
+                  -0.36003410816192627,
+                  -0.36003410816192627,
+                  -0.36003410816192627,
+                  -0.3600340783596039,
+                  -0.36003395915031433,
+                  -0.3600340187549591,
+                  -0.10346876084804535,
+                  -0.36003392934799194,
+                  -0.0379025898873806,
+                  -0.36003389954566956,
+                  -0.36003386974334717,
+                  -0.1560637205839157,
+                  -0.36003378033638,
+                  -0.3600337505340576,
+                  -0.08592947572469711,
+                  -0.36003369092941284,
+                  -0.9363040924072266,
+                  0.23632828891277313,
+                  -1.7381023168563843,
+                  -1.4507384300231934,
+                  -0.000011497177183628082,
+                  13.925680160522461,
+                  13.925670623779297,
+                  -3.769277334213257,
+                  -3.364466667175293,
+                  -1.1059215068817139,
+                  -0.9457919001579285,
+                  -0.07381640374660492,
+                  -0.044613905251026154,
+                  0.360034465518602
+                ],
+                [
+                  -0.22307103872299194,
+                  -0.11334539949893951,
+                  -0.11334539949893951,
+                  -0.13750268518924713,
+                  -0.1330435872077942,
+                  -0.13351766765117645,
+                  -0.13208898901939392,
+                  -0.13180260360240936,
+                  -0.13177812099456787,
+                  -0.09458284825086594,
+                  -0.09458284825086594,
+                  -0.13970822095870972,
+                  -0.1075138971209526,
+                  -0.010725535452365875,
+                  -0.15770933032035828,
+                  -0.1330125331878662,
+                  -0.03167495131492615,
+                  -0.18581922352313995,
+                  -0.012517490424215794,
+                  -0.00813238974660635,
+                  -0.004866433329880238,
+                  -0.2403433620929718,
+                  0.29535818099975586,
+                  -0.44393259286880493,
+                  -0.2353765368461609,
+                  -0.04231542721390724,
+                  -0.04231542721390724,
+                  -0.029896404594182968,
+                  -0.029896404594182968,
+                  -0.029896404594182968,
+                  -0.021400749683380127,
+                  -0.021400749683380127,
+                  -0.02757078967988491,
+                  -0.024350257590413094,
+                  -0.021352143958210945,
+                  -0.018639279529452324,
+                  -0.01622484251856804,
+                  -0.23546487092971802,
+                  -0.23173600435256958,
+                  -0.13619938492774963,
+                  -0.13176874816417694,
+                  -0.13175955414772034,
+                  -0.0026344158686697483,
+                  -0.02949822135269642,
+                  -0.02949822135269642,
+                  -0.12575051188468933,
+                  -0.12575051188468933,
+                  -0.13175062835216522,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.13176394999027252,
+                  -0.015197919681668282,
+                  -0.09898121654987335,
+                  -0.13174714148044586,
+                  -0.13176079094409943,
+                  -0.13174591958522797,
+                  -0.13174402713775635,
+                  -0.009038503281772137,
+                  -0.13174214959144592,
+                  0,
+                  -0.131740003824234,
+                  -0.13173866271972656,
+                  -0.1317368596792221,
+                  -0.13173553347587585,
+                  -0.13173231482505798,
+                  -0.13173389434814453,
+                  -0.032760266214609146,
+                  -0.13173086941242218,
+                  -0.059908948838710785,
+                  -0.13172973692417145,
+                  -0.13172833621501923,
+                  -0.062059659510850906,
+                  -0.13172706961631775,
+                  -0.13172577321529388,
+                  -0.03150235116481781,
+                  -0.1317245066165924,
+                  -0.5154876708984375,
+                  0.22010226547718048,
+                  -1.5891050100326538,
+                  -0.8302151560783386,
+                  0.000032640924473525956,
+                  -1.1560152769088745,
+                  -0.5587925910949707,
+                  14.154056549072266,
+                  -2.3460559844970703,
+                  -0.7601016759872437,
+                  -0.6688047051429749,
+                  -0.07850291579961777,
+                  -0.04697013646364212,
+                  0.13166570475925776
+                ],
+                [
+                  -0.22998471558094025,
+                  -0.10521019995212555,
+                  -0.10521019995212555,
+                  -0.12533129751682281,
+                  -0.12479563802480698,
+                  -0.12408780306577682,
+                  -0.12166442722082138,
+                  -0.1213330402970314,
+                  -0.12132308632135391,
+                  -0.11383340507745743,
+                  -0.11383340507745743,
+                  -0.1694614440202713,
+                  -0.13490653038024902,
+                  -0.014958544634282589,
+                  -0.1918560266494751,
+                  -0.1675196886062622,
+                  -0.041418347507715225,
+                  -0.20927785336971283,
+                  -0.015820151194930077,
+                  -0.006776641588658094,
+                  -0.004110819194465876,
+                  -0.2153647541999817,
+                  0.2426769733428955,
+                  -0.4620484709739685,
+                  -0.2405620515346527,
+                  -0.03880873695015907,
+                  -0.03880873695015907,
+                  -0.02791898511350155,
+                  -0.02791898511350155,
+                  -0.02791898511350155,
+                  -0.01817925088107586,
+                  -0.01817925088107586,
+                  -0.025104433298110962,
+                  -0.022143395617604256,
+                  -0.019358614459633827,
+                  -0.01682988367974758,
+                  -0.014579729177057743,
+                  -0.3524366021156311,
+                  -0.34860533475875854,
+                  -0.17537391185760498,
+                  -0.128656268119812,
+                  -0.12131331861019135,
+                  -0.002774191787466407,
+                  -0.03417278826236725,
+                  -0.03417278826236725,
+                  -0.1301444172859192,
+                  -0.1301444172859192,
+                  -0.12130501121282578,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.12131790071725845,
+                  -0.013686138205230236,
+                  -0.09591501951217651,
+                  -0.12130161374807358,
+                  -0.12131498754024506,
+                  -0.12130029499530792,
+                  -0.12129852175712585,
+                  -0.010655391030013561,
+                  -0.12129664421081543,
+                  0,
+                  -0.1212945207953453,
+                  -0.12129306048154831,
+                  -0.12129122763872147,
+                  -0.12128981202840805,
+                  -0.12128642201423645,
+                  -0.12128810584545135,
+                  -0.0253810603171587,
+                  -0.12128496915102005,
+                  -0.14265312254428864,
+                  -0.12137525528669357,
+                  -0.12128366529941559,
+                  -0.054825764149427414,
+                  -0.12128214538097382,
+                  -0.12128077447414398,
+                  -0.029102927073836327,
+                  -0.12127945572137833,
+                  -0.5175513029098511,
+                  0.2748470902442932,
+                  -1.9839330911636353,
+                  -1.0210453271865845,
+                  0.00003264532642788254,
+                  -1.4287967681884766,
+                  -0.666191816329956,
+                  -1.1024079322814941,
+                  14.164504051208496,
+                  -0.8739543557167053,
+                  -0.7487155199050903,
+                  -0.11652258038520813,
+                  -0.09575077146291733,
+                  0.12121821156447549
+                ],
+                [
+                  -0.39543911814689636,
+                  -0.18405380845069885,
+                  -0.18405380845069885,
+                  -0.2939658463001251,
+                  -0.2921297252178192,
+                  -0.2906446158885956,
+                  -0.2894715964794159,
+                  -0.2885822057723999,
+                  -0.2878541052341461,
+                  -0.19945810735225677,
+                  -0.19945810735225677,
+                  -0.32862234115600586,
+                  -0.2821921110153198,
+                  -0.033026501536369324,
+                  -0.36125558614730835,
+                  -0.30985838174819946,
+                  -0.04985753074288368,
+                  -0.36991286277770996,
+                  -0.022666417062282562,
+                  -0.01496193464845419,
+                  -0.009076151065528393,
+                  -0.40583696961402893,
+                  0.10634491592645645,
+                  -0.8103062510490417,
+                  -0.42165809869766235,
+                  -0.06821557134389877,
+                  -0.06821557134389877,
+                  -0.04662061482667923,
+                  -0.04662061482667923,
+                  -0.04662061482667923,
+                  -0.028714491054415703,
+                  -0.028714491054415703,
+                  -0.04279826581478119,
+                  -0.03702586889266968,
+                  -0.031987957656383514,
+                  -0.02761119231581688,
+                  -0.023819757625460625,
+                  -0.624711811542511,
+                  -0.6169540882110596,
+                  -0.31595849990844727,
+                  -0.2905321717262268,
+                  -0.28644734621047974,
+                  -0.005554041359573603,
+                  -0.0413430780172348,
+                  -0.0413430780172348,
+                  -0.17983204126358032,
+                  -0.17983204126358032,
+                  -0.2852506637573242,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.28834566473960876,
+                  -0.02415136620402336,
+                  -0.20277409255504608,
+                  -0.28475502133369446,
+                  -0.28747302293777466,
+                  -0.2847418189048767,
+                  -0.2844680845737457,
+                  -0.01861937716603279,
+                  -0.28417888283729553,
+                  0,
+                  -0.28370100259780884,
+                  -0.28353652358055115,
+                  -0.2831016182899475,
+                  -0.28291913866996765,
+                  -0.2821250557899475,
+                  -0.2824626564979553,
+                  -0.0816207230091095,
+                  -0.2817244529724121,
+                  -0.28223153948783875,
+                  -0.28211331367492676,
+                  -0.2814064919948578,
+                  -0.12859034538269043,
+                  -0.28096944093704224,
+                  -0.28064727783203125,
+                  -0.06921610981225967,
+                  -0.28046101331710815,
+                  -0.12305955588817596,
+                  -1.2248677015304565,
+                  -0.4389614462852478,
+                  -0.2811983823776245,
+                  -0.1852153092622757,
+                  -0.27389901876449585,
+                  -0.2734017074108124,
+                  -0.27301397919654846,
+                  -0.2726769745349884,
+                  14.146072387695312,
+                  0.01655813679099083,
+                  -0.1131209284067154,
+                  -0.11322295665740967,
+                  0.13191055050174752
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi there"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "hiya"
+      ],
+      [
+        "en",
+        "hi-ya"
+      ],
+      [
+        "en",
+        "howdy-do"
+      ],
+      [
+        "en",
+        "aloha"
+      ],
+      [
+        "en",
+        "hey"
+      ],
+      [
+        "en",
+        "How are you"
+      ],
+      [
+        "en",
+        "How are you doing"
+      ],
+      [
+        "en",
+        "How are you doing today"
+      ],
+      [
+        "en",
+        "I'm fine"
+      ],
+      [
+        "en",
+        "I'm good"
+      ],
+      [
+        "en",
+        "I'm doing good"
+      ],
+      [
+        "en",
+        "I'm doing great"
+      ],
+      [
+        "en",
+        "I'm doing well"
+      ],
+      [
+        "en",
+        "I'm doing alright"
+      ],
+      [
+        "en",
+        "goodbye for now"
+      ],
+      [
+        "en",
+        "bye bye take care"
+      ],
+      [
+        "en",
+        "okay see you later"
+      ],
+      [
+        "en",
+        "bye for now"
+      ],
+      [
+        "en",
+        "i must go"
+      ],
+      [
+        "en",
+        "good day"
+      ],
+      [
+        "en",
+        "good night"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "good evening"
+      ],
+      [
+        "en",
+        "good afternoon"
+      ],
+      [
+        "en",
+        "what is liiftsocial"
+      ],
+      [
+        "en",
+        "what is liftsocial?"
+      ],
+      [
+        "en",
+        "liiftsocial"
+      ],
+      [
+        "en",
+        "liftsocial"
+      ],
+      [
+        "en",
+        "About"
+      ],
+      [
+        "en",
+        "what can you tell me about liiftsocial."
+      ],
+      [
+        "en",
+        "what can you tell me about liftsocial."
+      ],
+      [
+        "en",
+        "tell me about liiftsocial"
+      ],
+      [
+        "en",
+        "tell me about liftsocial"
+      ],
+      [
+        "en",
+        "what is this website for ?"
+      ],
+      [
+        "en",
+        "what features do you offer"
+      ],
+      [
+        "en",
+        "what features do you provide"
+      ],
+      [
+        "en",
+        "what features do you have"
+      ],
+      [
+        "en",
+        "what features do you have available"
+      ],
+      [
+        "en",
+        "features"
+      ],
+      [
+        "en",
+        "how do I customize my post"
+      ],
+      [
+        "en",
+        "customize post"
+      ],
+      [
+        "en",
+        "customize my post"
+      ],
+      [
+        "en",
+        "customize"
+      ],
+      [
+        "en",
+        "custompost"
+      ],
+      [
+        "en",
+        "custom"
+      ],
+      [
+        "en",
+        "postcustomize"
+      ],
+      [
+        "en",
+        "postcustom"
+      ],
+      [
+        "en",
+        "post customize"
+      ],
+      [
+        "en",
+        "post custom"
+      ],
+      [
+        "en",
+        "how do I bulk upload via excel"
+      ],
+      [
+        "en",
+        "bulk upload via excel"
+      ],
+      [
+        "en",
+        "bulk upload excel"
+      ],
+      [
+        "en",
+        "bulk upload"
+      ],
+      [
+        "en",
+        "bulk excel"
+      ],
+      [
+        "en",
+        "bulk"
+      ],
+      [
+        "en",
+        "upload excel"
+      ],
+      [
+        "en",
+        "upload"
+      ],
+      [
+        "en",
+        "excel upload"
+      ],
+      [
+        "en",
+        "excel"
+      ],
+      [
+        "en",
+        "how do I use calendar view mode"
+      ],
+      [
+        "en",
+        "calendar view mode"
+      ],
+      [
+        "en",
+        "calendar view"
+      ],
+      [
+        "en",
+        "calendar"
+      ],
+      [
+        "en",
+        "view mode"
+      ],
+      [
+        "en",
+        "view"
+      ],
+      [
+        "en",
+        "mode"
+      ],
+      [
+        "en",
+        "how do I use quick re-post"
+      ],
+      [
+        "en",
+        "quick re-post"
+      ],
+      [
+        "en",
+        "quick repost"
+      ],
+      [
+        "en",
+        "quick"
+      ],
+      [
+        "en",
+        "repost"
+      ],
+      [
+        "en",
+        "re post"
+      ],
+      [
+        "en",
+        "re-post"
+      ],
+      [
+        "en",
+        "how do I use recurring posts"
+      ],
+      [
+        "en",
+        "recurring posts"
+      ],
+      [
+        "en",
+        "recurring"
+      ],
+      [
+        "en",
+        "recurring post"
+      ],
+      [
+        "en",
+        "post recurring"
+      ],
+      [
+        "en",
+        "what is the pricing"
+      ],
+      [
+        "en",
+        "what is the pricing for liiftsocial"
+      ],
+      [
+        "en",
+        "what is the pricing for liftsocial"
+      ],
+      [
+        "en",
+        "pricing"
+      ],
+      [
+        "en",
+        "what is the standard plan"
+      ],
+      [
+        "en",
+        "what is the standard plan for liiftsocial"
+      ],
+      [
+        "en",
+        "what is the standard plan for liftsocial"
+      ],
+      [
+        "en",
+        "standard plan"
+      ],
+      [
+        "en",
+        "standard"
+      ],
+      [
+        "en",
+        "what is the professional plan"
+      ],
+      [
+        "en",
+        "what is the professional plan for liiftsocial"
+      ],
+      [
+        "en",
+        "what is the professional plan for liftsocial"
+      ],
+      [
+        "en",
+        "professional plan"
+      ],
+      [
+        "en",
+        "professional"
+      ],
+      [
+        "en",
+        "what is the pro-premium plan"
+      ],
+      [
+        "en",
+        "what is the pro-premium plan for liiftsocial"
+      ],
+      [
+        "en",
+        "what is the pro-premium plan for liftsocial"
+      ],
+      [
+        "en",
+        "pro-premium plan"
+      ],
+      [
+        "en",
+        "pro-premium"
+      ],
+      [
+        "en",
+        "pro premium plan"
+      ],
+      [
+        "en",
+        "pro premium"
+      ],
+      [
+        "en",
+        "premium plan"
+      ],
+      [
+        "en",
+        "premium"
+      ],
+      [
+        "en",
+        "help center"
+      ],
+      [
+        "en",
+        "help"
+      ],
+      [
+        "en",
+        "help center for facebook"
+      ],
+      [
+        "en",
+        "help center for fb"
+      ],
+      [
+        "en",
+        "help center for facebook ads"
+      ],
+      [
+        "en",
+        "facebook"
+      ],
+      [
+        "en",
+        "fb"
+      ],
+      [
+        "en",
+        "help center for instagram"
+      ],
+      [
+        "en",
+        "help center for insta"
+      ],
+      [
+        "en",
+        "help center for instagram ads"
+      ],
+      [
+        "en",
+        "instagram"
+      ],
+      [
+        "en",
+        "insta"
+      ],
+      [
+        "en",
+        "help center for linkedin"
+      ],
+      [
+        "en",
+        "help center for linkedin ads"
+      ],
+      [
+        "en",
+        "linkedin"
+      ],
+      [
+        "en",
+        "help center for twitter"
+      ],
+      [
+        "en",
+        "help center for twitter ads"
+      ],
+      [
+        "en",
+        "twitter"
+      ],
+      [
+        "en",
+        "contact us"
+      ],
+      [
+        "en",
+        "contact"
+      ],
+      [
+        "en",
+        "contact us for help"
+      ],
+      [
+        "en",
+        "contact us for support"
+      ],
+      [
+        "en",
+        "contact us for assistance"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%",
+      "useDuckling": true
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greetings.hello": [
+          {
+            "answer": "Hey there!"
+          },
+          {
+            "answer": "Hey buddy!"
+          }
+        ],
+        "user.asking": [
+          {
+            "answer": "I am doing good! what about you?"
+          }
+        ],
+        "user.replying": [
+          {
+            "answer": "Nice to Know :) How can I help you ?"
+          }
+        ],
+        "greetings.goodNight": [
+          {
+            "answer": "Good Night."
+          }
+        ],
+        "greetings.goodDay": [
+          {
+            "answer": "Good Day!"
+          }
+        ],
+        "greetings.goodMorning": [
+          {
+            "answer": "Have a very happy Morning!"
+          }
+        ],
+        "greetings.goodevening": [
+          {
+            "answer": "Good evening."
+          }
+        ],
+        "greetings.goodafternoon": [
+          {
+            "answer": "Good afternoon."
+          }
+        ],
+        "user.details": [
+          {
+            "answer": "Nice to know that!"
+          }
+        ],
+        "user.mobile": [
+          {
+            "answer": "Thank you for your mobile num!"
+          },
+          {
+            "answer": "We will call you soon"
+          }
+        ],
+        "my.name": [
+          {
+            "answer": "You can call me Sam"
+          },
+          {
+            "answer": "I prefer to be called Phil :)"
+          }
+        ],
+        "my.address": [
+          {
+            "answer": "I live in this beautiful world created by nature"
+          }
+        ],
+        "my.me": [
+          {
+            "answer": "I am a friend of yours."
+          }
+        ],
+        "greetings.bye": [
+          {
+            "answer": "Till next time :)"
+          },
+          {
+            "answer": "see you soon!"
+          }
+        ],
+        "about.liiftsocial": [
+          {
+            "answer": "👉  Liiftsocial is a smart social media management tool that world deserves schedule, publish, analyze your content in just few clicks."
+          }
+        ],
+        "features.liiftsocial": [
+          {
+            "answer": "The features of the liiftsocial account are: <br>👉 Customize Post <br>👉 Bulk upload via Excel <br>👉 Calendar View Mode <br>👉 Quick Re-post <br>👉 Recurring Posts"
+          }
+        ],
+        "features.customizepost": [
+          {
+            "answer": "👉  You can customize your post. By previewing the post before scheduling it, you can make all your desired changes before it goes live."
+          }
+        ],
+        "features.bulkuploadviaexcel": [
+          {
+            "answer": "👉  Easily upload excel and schedule your social media posts without the hassle of uploading the posts daily."
+          }
+        ],
+        "features.calendarviewmode": [
+          {
+            "answer": "👉  Keep track of both the future & past posts, filter through posts, schedule new content right from within the calendar."
+          }
+        ],
+        "features.quickrepost": [
+          {
+            "answer": "👉  Re-post with just one click if you're planning to reuse them again in the future, or if they're not ready to get published yet."
+          }
+        ],
+        "features.recurringposts": [
+          {
+            "answer": "👉  Easily schedule the same post to go out every two days, every Friday, every three months, and so on. The options are limitless."
+          }
+        ],
+        "pricing.liiftsocial": [
+          {
+            "answer": "The pricing that we provide includes 14 days free trial: <br>👉 Standard Plan @9.99$ per month <br>👉 Professional Plan @19.99$ per month <br>👉 Pro-Premium Plan @29.99$ per month"
+          }
+        ],
+        "pricing.standardplan": [
+          {
+            "answer": "✔ 4 Social Accounts <br>✔ Unlimited Pending Scheduled Posts <br>✔ 3 Days Posts History <br>✔ Unlimited Bulk Upload <br>✔ Free Tier Support"
+          }
+        ],
+        "pricing.professionalplan": [
+          {
+            "answer": "✔ 8 Social Accounts <br>✔ Unlimited Pending Scheduled Posts <br>✔ 7 Days Posts History <br>✔ Unlimited Bulk Upload <br>✔ Silver Tier Support"
+          }
+        ],
+        "pricing.propremiumplan": [
+          {
+            "answer": "✔ 12 Social Accounts <br>✔ Unlimited Pending Scheduled Posts <br>✔ 15 Days Posts History <br>✔ Unlimited Bulk Upload <br>✔ Gold Tier Support"
+          }
+        ],
+        "helpcenter.liiftsocial": [
+          {
+            "answer": "For which social media account you need help: <br>👉 Facebook <br>👉 Instagram <br>👉 Twitter <br>👉 LinkedIn <br>👉 For other help center related queries please visit <br><a href=\"https://www.liiftsocial.com/help-center\" style=\"color:#fff ; text-decoration:none\n    ; cursor: pointer;\" target=\"_blank\">https://www.liiftsocial.com/help-center</a>"
+          }
+        ],
+        "helpcenter.facebook": [
+          {
+            "answer": "For facebook related queries you can visit this page: 🎇 <a href=\"https://www.liiftsocial.com/help-center/how-to-connect-facebook-pages\" style=\"color:#fff ; text-decoration:none\n; cursor: pointer;\" target=\"_blank\">https://www.liiftsocial.com/help-center/how-to-connect-facebook-pages</a>"
+          }
+        ],
+        "helpcenter.instagram": [
+          {
+            "answer": "For instagram related queries you can visit this page: 🎇<a href=\"https://www.liiftsocial.com/help-center/how-to-connect-instagram-account\" style=\"color:#fff ; text-decoration:none\n; cursor: pointer;\" target=\"_blank\">https://www.liiftsocial.com/help-center/how-to-connect-instagram-account</a>"
+          }
+        ],
+        "helpcenter.linkedin": [
+          {
+            "answer": "For linkedin related queries you can visit this page: 🎇 <a href=\"https://www.liiftsocial.com/help-center/how-to-connect-linkedin-profile\" style=\"color:#fff ; text-decoration:none\n; cursor: pointer;\" target=\"_blank\">https://www.liiftsocial.com/help-center/how-to-connect-linkedin-profile</a> "
+          }
+        ],
+        "helpcenter.twitter": [
+          {
+            "answer": "For twitter related queries you can visit this page: 🎇 <a href=\"https://www.liiftsocial.com/help-center/how-to-connect-twitter-account\" style=\"color:#fff ; text-decoration:none\n; cursor: pointer;\" target=\"_blank\">https://www.liiftsocial.com/help-center/how-to-connect-twitter-account</a>"
+          }
+        ],
+        "contactus.liiftsocial": [
+          {
+            "answer": "You can contact us at: <br>👉 Email: contact@liiftsocial.com <br>👉 Phone: <br>India +917859963186 <br>USA +14242591872 <br>👉 Schedule a meet: <br>✔ <a style=\"color:#fff ; text-decoration:none\n; cursor: pointer;\" href=\"https://calendly.com/liiftsocial\" target=\"_blank\">\nhttps://calendly.com/liiftsocial\n</a>"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
